@@ -7,28 +7,58 @@ body, html
   font-size: 14px;
   --bs-font-sans-serif:Arial;
 }
-#con1
-{
-  background-color: #FFFFFF;
-}
-a
-{
-  color: #666666;
-}
-#con2
-{
-  background-color: #3794D190;
-}
+
 #One{
+  min-height: 52px;
   display: flex;
   justify-content:space-between;
   align-items: center;
   text-align: center;
-  background-color: #FFFFFF;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  backdrop-filter: blur(4px);
 }
 #Two{
+  min-height: 52px;
   display: flex;
   text-align: center;
-  text-decoration-color: #FFFFFF;
-  background-color: #3794D190;
+  align-items: center;
+  background: rgba(55, 148, 209, 0.9);
+  backdrop-filter: blur(4px);
+
+}
+a{
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+  text-decoration: none;
+}
+.header2{
+  color: #FFFFFF;
+}
+
+#e3{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.a1{
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+footer{
+  min-height: 314px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
 }
