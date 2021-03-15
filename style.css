@@ -61,4 +61,17 @@ footer{
   top: 0px;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
+  display: flex;
+}
+.footer1{
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+hr{
+  position: absolute;
+  width: 1290px;
+  height: 0px;
+  left: 75px;
+  border: 1px solid #FFFFFF;
 }
