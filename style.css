@@ -7,17 +7,23 @@ body, html
   font-size: 14px;
   --bs-font-sans-serif:Arial;
 }
-
 #One{
   min-height: 52px;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  text-align: center;
-  left: 0px;
-  top: 0px;
   background: #FFFFFF;
   backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.col-h-1{
+  align-self: center;
+  text-align: center;
+  align-items: center;
+}
+.header1{
+  font-size: 14px;
+  line-height: 16px;
 }
 #Two{
   min-height: 52px;
@@ -40,21 +46,17 @@ a{
 .header2{
   color: #FFFFFF;
 }
-
+.footer1{
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
 #e3{
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
 }
-.a1{
 
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #666666;
-}
 footer{
   min-height: 314px;
   left: 0px;
@@ -62,11 +64,6 @@ footer{
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
   display: flex;
-}
-.footer1{
-  font-size: 16px;
-  line-height: 18px;
-  color: #FFFFFF;
 }
 hr{
   position: absolute;
