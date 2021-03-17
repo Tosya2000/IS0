@@ -7,7 +7,7 @@ body, html
   font-size: 14px;
   --bs-font-sans-serif:Arial;
 }
-#One{
+#One1{
   min-height: 52px;
   background: #FFFFFF;
   backdrop-filter: blur(4px);
@@ -15,7 +15,20 @@ body, html
   align-items: center;
   text-align: center;
 }
-
+#A2{
+  padding-right: 0px;
+}
+#One{
+  min-height: 52px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  text-align: center;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  backdrop-filter: blur(4px);
+}
 .col-h-1{
   align-self: center;
   text-align: center;
@@ -59,16 +72,21 @@ a{
 
 footer{
   min-height: 314px;
-  left: 0px;
-  top: 0px;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
-  display: flex;
+}
+
+.wraperF1{
+  max-width: 1290px;
+  padding-top: 32px;
+  padding-left: 75px;
+  padding-bottom: 11px;
+  justify-content: space-between;
+  align-items: center;
 }
 hr{
-  position: absolute;
-  width: 1290px;
-  height: 0px;
-  left: 75px;
   border: 1px solid #FFFFFF;
+}
+.ULF{
+padding-bottom: 16px;
 }
