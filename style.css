@@ -30,6 +30,9 @@ body, html
     display: table;
     clear: both;
 }
+#id1001{
+  position: relative;
+}
 #A2{
   padding-right: 0px;
 }
@@ -110,9 +113,7 @@ a{
   line-height: 28px;
   color: #FFFFFF;
   margin-bottom: 0;
-}
-#id3003{
-  margin-top: 115px;
+  margin-bottom: 115px;
 }
 #id4000{
   min-height: 361px;
@@ -122,6 +123,24 @@ a{
 }
 .row_id{
   align-items: center;
+}
+a.button_main{
+  color: #FFFFFF;
+  text-decoration: none;
+  user-select: none;
+  background: #3794D1;
+  outline: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding-top: 9px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  display: inline-block;
 }
 #id4001,#id9001{
   font-family: Arial;
@@ -154,23 +173,11 @@ a{
   text-align: justify;
   color: #666666;
 }
-#id4003, #id3003, #id7004,#id5005{
-  width: 138px;
-  height: 40px;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #FFFFFF;
-  background: #3794D1;
-  margin-bottom: 20px;
-  bottom: 0;
+.m_id4{
+    margin-bottom: 19px;
 }
 #id4003{
-  margin-top: 19px;
-
+  margin-bottom: 49px;
 }
 #id4004{
   margin-left: 46px;
@@ -220,7 +227,10 @@ a{
   color: #3794D1;
 }
 #id6004{
-
+  margin-top: 93px;
+  margin-bottom: 50px;
+  margin-right: 61px;
+  float: right;
 }
 #id6005,#id7001,#id8004,#id5001{
   background: url(image/id6005.jpg) no-repeat center;
@@ -251,9 +261,8 @@ a{
   margin-top: 162px;
 }
 #id5005{
-  margin-top: 127px;
-  margin-left: 61px;
-  border: 0;
+  margin-top: 116px;
+  float: right;
 }
 #id7001{
   background: url(image/id7001.jpg) no-repeat center;
@@ -284,8 +293,14 @@ a{
 }
 #id7004{
   margin-top: 78px;
-  margin-bottom: 0;
-  margin-left: 61px;
+  margin-bottom: 50px;
+  float: right;
+}
+#id8003{
+  margin-top: 78px;
+  margin-bottom: 50px;
+  margin-right: 61px;
+  float: right;
 }
 #id8004{
   background: url(image/id8004.jpg) no-repeat center;
@@ -296,7 +311,7 @@ a{
   backdrop-filter: blur(4px);
   color: #FFFFFF;
 }
-#id9001,#id9003{
+#id9001{
   color: #FFFFFF;
 }
 #id9002{
@@ -308,6 +323,11 @@ a{
   display: flex;
   align-items: center;
   color: #FFFFFF;
+}
+#id9003{
+  border: 1px solid #FFFFFF;
+  margin-top: 6px;
+  margin-bottom: 50px;
 }
 #id9004{
   background: url(image/id9005.png) no-repeat center;
