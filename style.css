@@ -91,7 +91,7 @@ a{
 }
 #id3000{
   background:url('image/slider.png') no-repeat center;
-  background-size: 100% 421px;
+  background-size: cover;
   backdrop-filter: blur(4px);
   min-height: 421px;
 }
@@ -114,6 +114,9 @@ a{
   color: #FFFFFF;
   margin-bottom: 0;
   margin-bottom: 115px;
+}
+#id3003{
+  margin-bottom: 20px;
 }
 #id4000{
   min-height: 361px;
@@ -346,11 +349,11 @@ a.button_main{
 }
 #id10000{
   background:url('image/id10000.png') no-repeat center;
-  background-size: 100% 322px;
-  backdrop-filter: blur(4px);
+  background-size: cover;
   min-height: 322px;
 }
 .hr_id10000{
+  max-width: 815px;
   border: 1px solid #666666;
 }
 #id10001{
@@ -363,9 +366,11 @@ a.button_main{
   align-items: center;
   color: #666666;
   margin-top: 50px;
+  margin-bottom: 2px;
 }
 #id10003,#id10004{
   margin-top: 12px;
+  margin-bottom: 50px;
 }
 /*End main*/
 
