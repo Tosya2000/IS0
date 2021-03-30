@@ -187,7 +187,7 @@ a.button_main{
   margin-left: 46px;
   align-self: center;
 }
- #id6000,#id8000{
+#id6000,#id8000{
   min-height: 529px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -199,9 +199,26 @@ a.button_main{
 #id5000,#id7000{
   min-height: 529px;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 0.01%);
+  backdrop-filter: blur(4px);
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.m_left_id6-8{
+  margin-left: 5.209%;
+  margin-right: 4.237%;
+}
+.m_right_id6-8{
+    min-width: 50.00%;
+}
+.m_left_id5-7{
+    min-width: 50.00%;
+}
+.m_right_id5-7{
+    margin-right: 5.209%;
+    margin-left: 4.237%;
 }
 #id6001,#id8001{
-  font-family: Arial;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -213,15 +230,14 @@ a.button_main{
   margin-bottom: 72px;
 }
 #id6002,#id8002{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #666666;
-    max-width:90.543%;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #666666;
 }
 #id6003{
   font-family: Arial;
@@ -234,20 +250,8 @@ a.button_main{
   color: #3794D1;
 }
 #id6004{
-  margin-top: 93px;
-  margin-bottom: 50px;
-  margin-right: 61px;
+  margin-top: 95px;
   float: right;
-}
-#id6005,#id7001,#id8004,#id5001{
-  background: url(image/id6005.jpg) no-repeat center;
-}
-.img_id6005{
-  width: 700px;
-  height: 429px;
-}
-#id5001{
-  background: url(image/id5001.jpg) no-repeat center;
 }
 #id5004{
   font-family: Arial;
@@ -258,17 +262,13 @@ a.button_main{
   display: flex;
   align-items: center;
   color: #666666;
-  margin-left: 61px;
 }
 .p_id5{
-  margin-top: 162px;
+  margin-top: 112px;
 }
 #id5005{
-  margin-top: 116px;
+  margin-top: 118px;
   float: right;
-}
-#id7001{
-  background: url(image/id7001.jpg) no-repeat center;
 }
 #id7002{
   font-family: Arial;
@@ -279,9 +279,8 @@ a.button_main{
   display: flex;
   align-items: center;
   color: #666666;
-  margin-left: 61px;
+  margin-top: 10px;
   margin-bottom: 68px;
-  margin-top: 60px;
 }
 #id7003{
   font-family: Arial;
@@ -292,20 +291,16 @@ a.button_main{
   display: flex;
   align-items: center;
   color: #666666;
-  margin-left: 61px;
 }
 #id7004{
   margin-top: 78px;
-  margin-bottom: 50px;
   float: right;
 }
 #id8003{
   margin-top: 95px;
-  margin-right: 61px;
   float: right;
 }
-
-#id8004{
+#id8004,#id7001,#id6005,#id5001{
   max-width: 100%;
 }
 #id9000{
@@ -400,8 +395,6 @@ footer{
 
 }
 .wraperF1{
-  max-width: 1290px;
-  margin: 0 auto;
   padding-top: 32px;
 }
 
