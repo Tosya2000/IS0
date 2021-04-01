@@ -7,13 +7,24 @@ body, html
   font-size: 14px;
   --bs-font-sans-serif:Arial;
 }
-#One1{
+#id1000{
   min-height: 52px;
-  background: #FFFFFF;
-  backdrop-filter: blur(4px);
   display: flex;
+  justify-content:space-between;
   align-items: center;
   text-align: center;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  backdrop-filter: blur(4px);
+}
+#id1002{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+#A2{
+  padding-right: 0px;
 }
 .dropdown-menu{
   position: absolute;
@@ -30,23 +41,6 @@ body, html
     display: table;
     clear: both;
 }
-#id1001{
-  position: relative;
-}
-#A2{
-  padding-right: 0px;
-}
-#One{
-  min-height: 52px;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  text-align: center;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
-  backdrop-filter: blur(4px);
-}
 .col-h-1{
   align-self: center;
   text-align: center;
@@ -56,14 +50,13 @@ body, html
   font-size: 14px;
   line-height: 16px;
 }
-#Two{
+#id2000{
   min-height: 52px;
   display: flex;
   text-align: center;
   align-items: center;
   background: rgba(55, 148, 209, 0.9);
   backdrop-filter: blur(4px);
-
 }
 a{
   font-family: Arial;
@@ -76,12 +69,6 @@ a{
 }
 .header2{
   color: #FFFFFF;
-}
-
-#e3{
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
 }
 /*Start main*/
 .wrapper{
@@ -322,7 +309,7 @@ a.button_main{
   margin: 0;
 }
 p{
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 #id9002{
   font-family: Arial;
@@ -351,7 +338,7 @@ p{
 .mar_bot{
   margin-bottom: 0;
 }
-#id10000{
+#id11000{
   background:url('image/id10000.png') no-repeat center;
   background-size: cover;
   min-height: 322px;
@@ -360,7 +347,7 @@ p{
   max-width: 815px;
   border: 1px solid #666666;
 }
-#id10001{
+#id11001{
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
@@ -372,7 +359,7 @@ p{
   margin-top: 50px;
   margin-bottom: 2px;
 }
-#id10003,#id10004{
+#id11003,#id11004{
   margin-top: 12px;
   margin-bottom: 50px;
 }
@@ -428,4 +415,7 @@ margin-left: 30px;
 }
 .af1{
   padding-top: 12px;
+}
+.m_m{
+  min-height: 337px;
 }
