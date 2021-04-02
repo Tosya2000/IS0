@@ -419,3 +419,48 @@ margin-left: 30px;
 .m_m{
   min-height: 337px;
 }
+/*В разработке start*/
+.main_developing,.main_developing_1{
+  padding: 0;
+  padding: 58px 0;
+  min-height:236px;
+  background: #FFFFFF;
+  backdrop-filter: blur(4px);
+}
+.h1_developing{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 55px;
+  color: #666666;
+  margin-bottom: 9px;
+}
+.h2_developing,.h2_developing_1,.a_developing_1{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3794D1;
+  margin-bottom: 0;
+}
+.main_developing_1{
+  padding-top: 0;
+  min-height: 185px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+  backdrop-filter: blur(4px);
+}
+.hr_developing{
+  border: 1px solid rgba(102, 102, 102, 0.3);
+  max-width: 98.339%;
+}
+.h2_developing_1{
+  color: #666666;
+  margin-top: 56px;
+  margin-bottom: 12px;
+}
+.a_developing_1{
+  font-weight: normal;
+  text-decoration-line: underline;
+  color: #3794D1;
+}
+/*В разработке END*/
