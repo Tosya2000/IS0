@@ -464,3 +464,78 @@ margin-left: 30px;
   color: #3794D1;
 }
 /*В разработке END*/
+
+.contact_1{
+  min-height: 208px;
+  background: #FFFFFF;
+  backdrop-filter: blur(4px);
+  padding: 58px 0 60px 0;
+}
+.contact_2{
+  min-height: 403px;
+  background: url('image/contact.jpg') no-repeat center;
+  background-size: cover;
+}
+.contact_3{
+  min-height: 603px;
+  padding: 31px 0 58px 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+  backdrop-filter: blur(4px);
+}
+.hr_contact{
+  margin: 58px 0 57px 0;
+  border: 1px solid rgba(102, 102, 102, 0.3);
+}
+.main_inf_bot{
+  margin-top: 27px;
+}
+/*Навигация main start*/
+.main_nav_a{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #3794D1;
+}
+.main_nav_vl{
+  margin: 0 19px;
+  height: 25px;
+  border: 1px solid #3794D1;
+}
+.main_hr1_contact{
+  margin-bottom: 10px;
+
+}
+/*Навигация main end*/
+
+/*Middle main start*/
+.h2_inf{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  color: #3794D1;
+  margin-bottom: 16px;
+}
+.p_inf_add{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #666666;
+}
+.vl_inf{
+  height: 140px;
+  width: 0;
+  margin-left: 97.5px;
+  margin-right: 25px;
+  border: 5px solid rgba(102, 102, 102, 0.5);
+}
+.h2_inf_black{
+  color: #666666;
+}
+/*Middle main end*/
+.a_line{
+  text-decoration-line: underline;
+  color: #3794D1;
+}
