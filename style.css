@@ -490,6 +490,9 @@ margin-left: 30px;
   margin-top: 27px;
 }
 /*Навигация main start*/
+.main_nav{
+  margin-left: 3px;
+}
 .main_nav_a{
   font-style: normal;
   font-weight: bold;
