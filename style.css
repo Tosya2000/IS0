@@ -471,7 +471,7 @@ margin-left: 30px;
   backdrop-filter: blur(4px);
   padding: 58px 0 60px 0;
 }
-.contact_2{
+.contact_2, .contact_2_about{
   min-height: 403px;
   background: url('image/contact.jpg') no-repeat center;
   background-size: cover;
@@ -482,6 +482,9 @@ margin-left: 30px;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
   backdrop-filter: blur(4px);
 }
+.vl_contact_3{
+  margin-left: 97.5px;
+}
 .hr_contact{
   margin: 58px 0 57px 0;
   border: 1px solid rgba(102, 102, 102, 0.3);
@@ -490,15 +493,15 @@ margin-left: 30px;
   margin-top: 27px;
 }
 /*Навигация main start*/
-.main_nav{
-  margin-left: 3px;
-}
 .main_nav_a{
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   color: #3794D1;
+}
+.main_nav{
+  margin-left: 3px;
 }
 .main_nav_vl{
   margin: 0 19px;
@@ -507,7 +510,6 @@ margin-left: 30px;
 }
 .main_hr1_contact{
   margin-bottom: 10px;
-
 }
 /*Навигация main end*/
 
@@ -527,10 +529,24 @@ margin-left: 30px;
   line-height: 28px;
   color: #666666;
 }
+.p_inf{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #666666;
+}
+.p_inf_blue{
+  color: #3794D1;
+}
+.p_a_inf{
+  font-size: 18px;
+  line-height: 21px;
+  color: #3794D1;
+}
 .vl_inf{
   height: 140px;
   width: 0;
-  margin-left: 97.5px;
   margin-right: 25px;
   border: 5px solid rgba(102, 102, 102, 0.5);
 }
@@ -542,3 +558,33 @@ margin-left: 30px;
   text-decoration-line: underline;
   color: #3794D1;
 }
+
+/*Об ISO20022 start*/
+.contact_2_about{
+  background: url('image/about_iso.jpg') no-repeat center;
+  background-size: cover;
+}
+.contact_3_about{
+  min-height: 689px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+  backdrop-filter: blur(4px);
+  padding: 31px 0 58px 0;
+}
+.contact_4_about{
+  padding: 58px 0;
+  min-height: 380px;
+  background: #FFFFFF;
+  backdrop-filter: blur(4px);
+}
+.contact_5_about{
+  min-height: 528px;
+  background: #3794D1;
+  backdrop-filter: blur(4px);
+}
+.p_contact_about{
+  padding-right: 45.5px;
+}
+.p_contact_4{
+  margin-right: 11px;
+}
+/*Об ISO20022 end*/
