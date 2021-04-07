@@ -539,6 +539,9 @@ margin-left: 30px;
 .p_inf_blue{
   color: #3794D1;
 }
+.p_inf_white{
+  color: #FFFFFF;
+}
 .p_a_inf{
   font-size: 18px;
   line-height: 21px;
@@ -579,6 +582,7 @@ margin-left: 30px;
 .contact_5_about{
   min-height: 528px;
   background: #3794D1;
+  padding: 58px 0;
   backdrop-filter: blur(4px);
 }
 .p_contact_about{
@@ -586,5 +590,65 @@ margin-left: 30px;
 }
 .p_contact_4{
   margin-right: 11px;
+}
+.imh_r, .imh_l{
+  position: absolute;
+  margin-top: 54px;
+  margin-left: 54px;
+  height: 360px;
+  width: 360px;
+  background: #3794D1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 26px;
+}
+.img_main_l, .img_main_r{
+  position: relative;
+}
+.col_main_r{
+  padding-left: 108px;
+  padding-right: 0;
+}
+.col_main_l{
+  padding-left: 125px;
+  padding-right: 0;
+}
+.imh{
+  transform: rotate(-3deg);
+}
+a.button_main1{
+  border: 1px solid #FFFFFF;
+  background: #3794D1;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  padding: 13px 26px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  .col_main_l{
+    padding-left: 33px;
+  }
+}
+@media (max-width: 1100px) {
+  .col_main_r{
+    padding-left: 25px;
+  }
+  .col_main_l{
+    padding-left: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .col_main_r,.col_main_l{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .col_main_r{
+    margin-top: 79px;
+  }
 }
 /*Об ISO20022 end*/
