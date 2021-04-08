@@ -592,24 +592,24 @@ margin-left: 30px;
   margin-right: 11px;
 }
 .imh_r, .imh_l{
-  position: absolute;
+  position: relative;
   margin-top: 54px;
   margin-left: 54px;
-  height: 360px;
-  width: 360px;
+  height: 358px;
+  width: 358px;
   background: #3794D1;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 26px;
 }
 .img_main_l, .img_main_r{
-  position: relative;
-}
-.col_main_r{
-  padding-left: 108px;
-  padding-right: 0;
+  position: absolute;
 }
 .col_main_l{
   padding-left: 125px;
+  padding-right: 0;
+}
+.col_main_r{
+  padding-left: 108px;
   padding-right: 0;
 }
 .imh{
@@ -642,13 +642,24 @@ a.button_main1{
     padding-left: 0px;
   }
 }
-@media (max-width: 992px) {
-  .col_main_r,.col_main_l{
+@media (max-width: 991px) {
+.col_main_r,.col_main_l{
     padding-left: 0;
-    padding-right: 0;
-  }
+    display: flex;
+}
+.img_main_l, .img_main_r{
+  position: inherit;
+}
+.imh_r, .imh_l{
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+}
   .col_main_r{
     margin-top: 79px;
+  }
+  .main_nav_vl{
+    margin: 0 9px;
   }
 }
 /*Об ISO20022 end*/
