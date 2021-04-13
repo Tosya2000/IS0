@@ -179,9 +179,7 @@ a.button_main{
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
-  padding: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 #id5000,#id7000{
   min-height: 529px;
@@ -210,11 +208,12 @@ a.button_main{
   font-weight: bold;
   font-size: 36px;
   line-height: 41px;
-  display: flex;
-  align-items: center;
   color: #666666;
   margin-top: 10px;
   margin-bottom: 72px;
+}
+#id6001{
+  margin-bottom: 88px;
 }
 #id6002,#id8002{
   font-family: Arial;
@@ -376,8 +375,6 @@ footer{
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
   color: #FFFFFF;
 
 }
@@ -663,3 +660,16 @@ a.button_main1{
   }
 }
 /*Об ISO20022 end*/
+.col_home_l{
+  padding-left: 0px;
+  padding-right: 61px;
+}
+.col_home_r{
+  padding-left: 61px;
+  padding-right: 0px;
+}
+@media (max-width: 767px) {
+  .col_home_l,.col_home_r{
+    padding: 0;
+  }
+}
