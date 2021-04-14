@@ -2,6 +2,7 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
     <link rel="stylesheet" href="bootstrap\dist\css\bootstrap.css">
     <link rel="stylesheet" href="bootstrap\dist\css\bootstrap-grid.css">
@@ -9,289 +10,344 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header id="id1000">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="header-left">
-            <div class="row">
-              <div class="col col-h-1 col-6 col-lg" id="A2">
-                <a href="https://bisc.by/" target="_blank">
-                  <img src="image\flower.png" id="id1001" alt="">
+    <header class="header" id="id1000">
+      <div class="wrapper">
+        <div class="wrapper_header d-md-flex">
+          <div class="header_logo">
+            <a href="https://bisc.by/" target="_blank" class="header_logo_link">
+              <img src="image\flower.png" alt="" class="header_logo_pic" id="id1001">
+            </a>
+            <nav class="header_nav">
+              <ul class="header_list">
+                <li class="header_item_id11">
+                    <a href="index.html" class="a_header a_logo" id="id1002">ISO 20022 BY</a>
+                  </li>
+                <li class="header_item_id11">
+                    <a href="about_iso20022.html" class=" a_header" id="id1003">Об ISO 20022</a>
+                  </li>
+                <li class="header_item_id11">
+                  <a href="useful_links.html" class="a_header" id="id1004">Полезные ссылки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <nav class="header_nav">
+            <ul class="header_list">
+              <li class="header_item_id12">
+                <a href="mailto:info@iso20022.by" class="a_header header_link" id="id1005">info@iso20022.by</a>
+              </li>
+              <li class="header_item_id12 dropdown">
+                <a class="a_header nav-link dropdown-toggle p-0" id="id1006" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Русский (RU-BY)
                 </a>
-              </div>
-              <div class="col col-h-1 col-6 col-lg">
-                <a href="index.html" class="navbar-brand header1" id="id1002">ISO 20022 BY</a>
-              </div>
-              <div class="col col-h-1 col-6 col-lg">
-                <a href="about_iso20022.html" class="navbar-brand header1" id="id1003">Об ISO 20022</a>
-              </div>
-              <div class="col col-h-1 col-6 col-lg">
-                <a href="useful_links.html" class="navbar-brand header1" id="id1004">Полезные ссылки</a>
-              </div>
-            </div>
-          </div>
-          <div class="header-right">
-            <div class="row">
-              <div class="col col-h-1">
-                <a href="mailto:info@iso20022.by" class="navbar-brand header1" id="id1005">info@iso20022.by</a>
-              </div>
-              <div class="col col-h-1">
-                <div class="btn-group">
-                  <a class="dropdown-toggle" href="#" id="id1006" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Русский (RU-BY)
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Выбор языка / Select language</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <div class="row">
-                      <div class="column">
-                        <li><a class="dropdown-item" href="#">Беларусь - Русский (RU-BY)</a></li>
-                        <li><a class="dropdown-item" href="#">Казахстан - Русский (RU-KZ)</a></li>
-                        <li><a class="dropdown-item" href="#">Киргизия - Русский (RU-KG)</a></li>
-                        <li><a class="dropdown-item" href="#">Россия - Русский (RU)</a></li>
-                        <li><a class="dropdown-item" href="#">Հայաստան - Hայերեն (AM)</a></li>
-                        <li><a class="dropdown-item" href="#">English (EN)</a></li>
-                      </div>
-                      <div class="column">
-                        <li><a class="dropdown-item" href="#">Việt Nam - Tiếng Việt (VN)</a></li>
-                        <li><a class="dropdown-item" href="#">ایران - ایرانی (IR)</a></li>
-                        <li><a class="dropdown-item" href="#">Singapore - English (EN-SG)</a></li>
-                        <li><a class="dropdown-item" href="#">Србија - Српски (RS)</a></li>
-                        <li><a class="dropdown-item" href="#">Moldova - Română (RO-MD)</a></li>
-                        <li><a class="dropdown-item" href="#">O'zbekiston - O'zbek (UZ)</a></li>
-                        <li><a class="dropdown-item" href="#">Cuba - Español (ES-CU)</a></li>
-                      </div>
-                      <div class="column">
-                        <li><a class="dropdown-item" href="#">مصر - مصرية (EG)</a></li>
-                        <li><a class="dropdown-item" href="#">ישראל - עִברִית (IL)</a></li>
-                        <li><a class="dropdown-item" href="#">India - English (EN-IN)</a></li>
-                        <li><a class="dropdown-item" href="#">中國 - 中國人 (CN)</a></li>
-                        <li><a class="dropdown-item" href="#">Монгол Улс - Монгол (MN)</a></li>
-                        <li><a class="dropdown-item" href="#">ประเทศไทย - ไทย (TH)</a></li>
-                      </div>
+                <!--<ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="id1001">
+                  <li><a class="dropdown-item" href="#">Выбор языка / Select language</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <div class="row">
+                    <div class="col">
+                      <li><a class="dropdown-item" href="#">Беларусь - Русский (RU-BY)</a></li>
+                      <li><a class="dropdown-item" href="#">Казахстан - Русский (RU-KZ)</a></li>
+                      <li><a class="dropdown-item" href="#">Киргизия - Русский (RU-KG)</a></li>
+                      <li><a class="dropdown-item" href="#">Россия - Русский (RU)</a></li>
+                      <li><a class="dropdown-item" href="#">Հայաստան - Hայերեն (AM)</a></li>
+                      <li><a class="dropdown-item" href="#">English (EN)</a></li>
                     </div>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+                    <div class="col">
+                      <li><a class="dropdown-item" href="#">Việt Nam - Tiếng Việt (VN)</a></li>
+                      <li><a class="dropdown-item" href="#">ایران - ایرانی (IR)</a></li>
+                      <li><a class="dropdown-item" href="#">Singapore - English (EN-SG)</a></li>
+                      <li><a class="dropdown-item" href="#">Србија - Српски (RS)</a></li>
+                      <li><a class="dropdown-item" href="#">Moldova - Română (RO-MD)</a></li>
+                      <li><a class="dropdown-item" href="#">O'zbekiston - O'zbek (UZ)</a></li>
+                      <li><a class="dropdown-item" href="#">Cuba - Español (ES-CU)</a></li>
+                    </div>
+                    <div class="col">
+                      <li><a class="dropdown-item" href="#">مصر - مصرية (EG)</a></li>
+                      <li><a class="dropdown-item" href="#">ישראל - עִברִית (IL)</a></li>
+                      <li><a class="dropdown-item" href="#">India - English (EN-IN)</a></li>
+                      <li><a class="dropdown-item" href="#">中國 - 中國人 (CN)</a></li>
+                      <li><a class="dropdown-item" href="#">Монгол Улс - Монгол (MN)</a></li>
+                      <li><a class="dropdown-item" href="#">ประเทศไทย - ไทย (TH)</a></li>
+                    </div>
+                  </div>
+                </ul>-->
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
-    <header id="id2000">
-      <div class="container">
-        <div class="d-lg-flex justify-content-evenly align-items-center">
-            <div class="text-center">
-              <a href="our_services.html" class="header2" id="id2001">Наши услуги</a></div>
-            <div class="text-center">
-              <a href="message_directory.html" class="header2" id="id2002">Каталог сообщений</a></div>
-            <div class="text-center">
-              <a href="repository.html" class="header2" id="id2003">Репозиторий</a></div>
-            <div class="text-center">
-              <a href="developing.html" class="header2" id="id2004">Новости</a></div>
-            <div class="text-center">
-              <a href="contact_inf.html" class="header2" id="id2005">Контактная информация</a></div>
-            <div class="text-center">
-              <a href="#" class="header2" id="id2005">
-                <img src="image\find.png">
-              </a>
-            </div>
-            <div class="text-center">
-              <a href="#" class="header2"id="id2006">
-                <img src="image\come_in.png">
-              </a>
-            </div>
-        </div>
+    <header class="header_id2" id="id2000">
+      <div class="wrapper">
+        <ul class="header_list_id2 d-md-flex justify-content-evenly">
+          <li class="header_item_id2">
+                <a href="our_services.html" class="a_header a_header_white" id="id2001">Наши услуги</a>
+              </li>
+          <li class="header_item_id2">
+                <a href="message_directory.html" class="a_header a_header_white" id="id2002">Каталог сообщений</a>
+              </li>
+          <li class="header_item_id2">
+                <a href="repository.html" class="a_header a_header_white" id="id2003">Репозиторий</a>
+              </li>
+          <li class="header_item_id2">
+                <a href="developing.html" class="a_header a_header_white" id="id2004">Новости</a>
+              </li>
+          <li class="header_item_id2">
+                <a href="contact_inf.html" class="a_header a_header_white" id="id2005">Контактная информация</a>
+              </li>
+          <li class="header_item_id2">
+                <a  class="a_header a_header_white" id="id2006">
+                  <img src="image\find.png">
+                </a>
+              </li>
+          <li class="header_item_id2">
+                  <a  class="a_header a_header_white"id="id2007">
+                    <img src="image\come_in.png">
+                  </a>
+              </li>
+            </ul>
       </div>
     </header>
     <main>
-      <div class="container-fluid" id="id3000">
+      <section class="slider_main" id="id3000">
         <div class="wrapper">
-          <h1 id="id3001">Услуги по сопровождению перехода
-          <br>на методологию ISO 20022</h1>
-          <p id="id3002">ОАО “БМРЦ” - центр компетенций в области внедрения стандарта ISO 20022
-                            <br>в Республике Беларусь, странах СНГ и странах ближнего зарубежья.</p>
-          <!--<button class="btn" id="id3003">Подробнее</button>-->
-          <a href="#" class="button_main" id="id3003">Подробнее</a>
-          </div>
-      </div>
-      <div class="container-fluid" id="id4000">
-        <div class="wrapper">
-          <div class="row row_id" >
-            <div class="col-12 col-md-6 col-xl-8">
-              <h1 id="id4001">Что такое ISO 20022</h1>
-              <hr class="hr_id4000">
-              <p id="id4002">ISO 20022 — международный стандарт обмена электронными сообщениями между организациями финансовой отрасли.</p>
-                <p class="p_id4002 m_id4"id="id4002">В стандарте определяются подходы к построению бизнес-моделей, правила описания бизнес-процессов, порядок проектирования
-                схем и форматов сообщений и их описания, а также регламентируются процессы публикации документации по стандарту и базовые
-                правила его сопровождения.</p>
-                <a href="#" class="button_main" id="id4003">Подробнее</a>
+          <div class="row m-0">
+            <div class="col p-0">
+              <h1 class="h1_home_slider" id="id3001">Услуги по сопровождению перехода
+                                        <br>на методологию ISO 20022</h1>
+              <p class="p_slider mar_bot"id="id3002">ОАО “БМРЦ” - центр компетенций в области внедрения стандарта ISO 20022
+                                <br>в Республике Беларусь, странах СНГ и странах ближнего зарубежья.</p>
+              <a  class="button_main" id="id3003">Подробнее</a>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
-              <p class="img_id9">
-                <img src="image\id4004.jpg" id="id4004">
+          </div>
+        </div>
+      </section>
+      <section class="main_home_id3" id="id4000">
+        <div class="wrapper">
+          <div class="row m-0">
+            <div class="col-12 col-md-6 col-xl-8 p-0">
+              <h1 class="h1_home h1_id4" id="id4001">Что такое ISO 20022</h1>
+              <hr class="hr_id4000">
+              <p class="p_home p_text" id="id4002">ISO 20022 — международный стандарт обмена электронными сообщениями между организациями финансовой отрасли.</p>
+              <p class="p_home mar_bot p_text" id="id4002">В стандарте определяются подходы к построению бизнес-моделей,
+                                                  правила описания  бизнес-процессов, порядок проектирования схем
+                                                  и форматов сообщений и их описания, а также регламентируются
+                                                  процессы публикации документации по стандарту и базовые правила его сопровождения.</p>
+                <a class="button_main but_id4" id="id4003">Подробнее</a>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-0 align-self-center">
+              <p class="img_center">
+                <img src="image\id4004.jpg" class="img_id4 img_u" id="id4004" alt="">
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid" id="id5000">
-        <div class="d-md-flex justify-content-center" >
-          <div class="m_left_id5-7 align-self-center">
-            <img src="image\id5001.jpg" class="w-100" id="id5001" alt="">
-          </div>
-          <div class="m_right_id5-7">
-            <p class="p_id5"id="id5004">На сайте Национального банка размещены обновленные
-                          общее описание структуры и форматов национальных сообщений,
-                          проекты форматов национальных сообщений системы BISS.</p>
-            <p class="p_id4002"id="id5004">Дополнительно в рубрике «Презентации и другие материалы»
-                          на вкладке «Внедрение методологии ISO 20022» размещены
-                          требования к автоматизированным системам банков и другим
-                          автоматизированным системам.</p>
-              <a href="#" class="button_main" id="id5005">Подробнее</a>
+      </section>
+      <section class="main_home_l" id="id5000">
+        <div class="wrapper">
+          <div class="row m-0">
+            <div class="col-12 col-md-6 p-0 align-self-center">
+              <img src="image\id5001.jpg" id="id5001" class="w-100" alt="">
+            </div>
+            <div class="col-12 col-md-6 col_home_r">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="data_news d-flex  h1_id5">
+                      <p class="m-0 p_news" id="id5002">19.01.2021</p>
+                      <div class="vl_news"></div>
+                      <p class="m-0 p_news" id="id5003">Новости</p>
+                    </div>
+                    <div class="inf_news">
+                      <p class="p_home" id="id5004">На сайте Национального банка размещены обновленные
+                                    общее описание структуры и форматов национальных сообщений,
+                                    проекты форматов национальных сообщений системы BISS.</p>
+                      <p class="p_home mar_bot" id="id5004">Дополнительно в рубрике «Презентации и другие материалы»
+                                    на вкладке «Внедрение методологии ISO 20022» размещены
+                                    требования к автоматизированным системам банков и другим
+                                    автоматизированным системам.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="data_news d-flex h1_id5">
+                      <p class="m-0 p_news" id="id5002">04.03.2021</p>
+                      <div class="vl_news"></div>
+                      <p class="m-0 p_news" id="id5003">Новости</p>
+                    </div>
+                    <div class="inf_news">
+                      <p class="p_home mar_bot" id="id5004">На сайте Национального банка
+                        Республики Беларусь размещены таблицы эквивалентности
+                        национальных сообщений, используемых в различных
+                        автоматизированных системах.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="data_news d-flex h1_id5">
+                      <p class="m-0 p_news" id="id5002">12.02.2021</p>
+                      <div class="vl_news"></div>
+                      <p class="m-0 p_news" id="id5003">Новости</p>
+                    </div>
+                    <div class="inf_news">
+                      <p class="p_home mar_bot" id="id5004">На сайте Национального банка Республики
+                        Беларусь размещены обновленные общее описание структуры и
+                        форматов национальных сообщений, проекты форматов национальных
+                        сообщений системы BISS.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                <a class="button_main but_id5" id="id5005">Подробнее</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="container-fluid" id="id6000">
-        <div class="d-md-flex justify-content-center" >
-          <div class="m_left_id6-8">
-            <h1 id="id6001">ISO 20022. Просто о сложном</h1>
-            <p id="id6002">ISO 20022 для “чайников” (for dummies) подготовлено группой
-              по стандартам Сообщества всемирных межбанковских финансовых
-              телекоммуникаций (SWIFT) в качестве полезного источника
-              информации для существующих и потенциальных пользователей ISO 20022.</p>
-              <p id="id6002">Международная организация по стандартизации, ISO.</p>
-              <a href="https://www.iso.org/ru/home.html" id="id6003">www.iso.org</a>
-              <a href="#" class="button_main" id="id6004">Подробнее</a>
+      </section>
+      <section class="main_home_r" id="id6000">
+        <div class="wrapper">
+          <div class="row m-0">
+            <div class="col-12 col-md-6 col_home_l order-2 order-md-1">
+              <h1 class="h1_home h1_id6" id="id6001">ISO 20022. Просто о сложном</h1>
+              <p class="p_home" id="id6002">ISO 20022 для “чайников” (for dummies) подготовлено группой
+                по стандартам Сообщества всемирных межбанковских финансовых
+                телекоммуникаций (SWIFT) в качестве полезного источника
+                информации для существующих и потенциальных пользователей ISO 20022.</p>
+              <p class="p_home mar_bot" id="id6002">Международная организация по стандартизации, ISO.</p>
+              <a href="https://www.nbrb.by/payment/iso20022/iso-20022-for-dummies.pdf" target="_blank" class="button_main but_id6" id="id6004">Подробнее</a>
             </div>
-            <div class="m_right_id6-8 align-self-center">
+            <div class="col-12 col-md-6 p-0 align-self-center order-1 order-md-2">
               <img src="image\id6005.jpg" class="w-100" alt="" id="id6005">
             </div>
           </div>
-      </div>
-      <div class="container-fluid" id="id7000">
-          <div class="d-md-flex justify-content-center" >
-            <div class="m_left_id5-7 align-self-center" >
-              <img src="image\id7001.jpg"  class="w-100" alt="" id="id7001">
+        </div>
+      </section>
+      <section class="main_home_l" id="id7000">
+        <div class="wrapper">
+          <div class="row m-0">
+            <div class="col-12 col-md-6 p-0 align-self-center">
+              <img src="image\id7001.jpg" class="w-100" alt="" id="id7001">
             </div>
-            <div class="m_right_id5-7">
-              <h1 id="id7002">Каталог сообщений</h1>
-              <p id="id7003">Каталог сообщений обеспечивает доступ к описанию (переводу оригинальных документов) определений сообщений ISO 20022.</p>
-              <p id="id7003">Предыдущие версии описаний на языке оригинала доступны в Архиве сообщений ISO 20022.</p>
-              <p class="mar_bot" id="id7003">Все сообщества пользователей ISO 20022 призываются к использованию самых последних
+            <div class="col-12 col-md-6 col_home_r">
+              <h1 class="h1_home h1_id7" id="id7002">Каталог сообщений</h1>
+              <p class="p_home" id="id7003">Каталог сообщений обеспечивает доступ к описанию (переводу оригинальных документов) определений сообщений ISO 20022.</p>
+              <p class="p_home" id="id7003">Предыдущие версии описаний на языке оригинала доступны в Архиве сообщений ISO 20022.</p>
+              <p class="p_home mar_bot" id="id7003">Все сообщества пользователей ISO 20022 призываются к использованию самых последних
                 версий определений сообщений для обеспечения глобальной совместимости версий и
                 устранения параллельного хождения версий в различных сообществах.</p>
-                <a href="#" class="button_main" id="id7004">Подробнее</a>
+              <a  class="button_main but_id7" id="id7004">Подробнее</a>
             </div>
           </div>
-      </div>
-      <div class="container-fluid" id="id8000">
-          <div class="d-md-flex justify-content-center">
-            <div class="m_left_id6-8">
-              <h1 id="id8001">Репозиторий</h1>
-              <p id="id8002">Репозиторий ISO 20022 состоит из двух основных частей:
+        </div>
+      </section>
+      <section class="main_home_r" id="id8000">
+        <div class="wrapper">
+          <div class="row m-0">
+            <div class="col-12 col-md-6 col_home_l order-2 order-md-1">
+              <h1 class="h1_home h1_id8" id="id8001">Репозиторий</h1>
+              <p class="p_home" id="id8002">Репозиторий ISO 20022 состоит из двух основных частей:
                 словаря данных и Каталога бизнес-процессов.</p>
-              <p id="id8002">Словарь данных содержит бизнес-концепции сообщений и типы данных.</p>
-              <p id="id8002" class="mar_bot">Каталог бизнес-процессов организован в бизнес-областях.
+              <p class="p_home" id="id8002">Словарь данных содержит бизнес-концепции сообщений и типы данных.</p>
+              <p class="p_home mar_bot" id="id8002">Каталог бизнес-процессов организован в бизнес-областях.
                 Требования общения и взаимодействия потребностей в различных
                  областях бизнеса поддерживаются бизнес-операцииями.</p>
-              <a href="#" class="button_main" id="id8003">Подробнее</a>
+              <a  class="button_main but_id8" id="id8003">Подробнее</a>
             </div>
-            <div class="m_right_id6-8 align-self-center">
-                <img src="image\id8004.jpg" class="w-100" alt="" id="id8004">
+            <div class="col-12 col-md-6 p-0 align-self-center order-1 order-md-2">
+              <img src="image\id8004.jpg" class="w-100" alt="" id="id8004">
             </div>
           </div>
-      </div>
-      <div class="container-fluid" id="id9000">
+        </div>
+      </section>
+      <section class="main_home_id9" id="id9000">
         <div class="wrapper">
-          <div class="d-lg-flex justify-content-center align-items-center">
-            <div class="col-12 col-lg-8">
-              <h1 id="id9001">Услуги в области внедрения ISO 20022</h1>
+          <div class="row m-0">
+            <div class="col-12 col-lg-8 p-0">
+              <h1 class="h1_home h1_id9" id="id9001">Услуги в области внедрения ISO 20022</h1>
               <hr class="hr_id9000">
-              <p id="id9002">В процессе активного участия в масштабном проекте
+              <p class="p_home p_id9  p_text" id="id9002">В процессе активного участия в масштабном проекте
                 Национального банка Республики Беларусь по внедрению международного стандарта
                 ISO 20022 в платежную систему Республики Беларусь и иные автоматизированные
                 системы ОАО “БМРЦ” наработало экспертизу, позволяющую предоставлять дополнительный услуги в области ISO 20022 для клиентов.</p>
-              <p class="p_id4002" id="id9002">В нашем активе успешно выполненные проекты
+              <p class="p_home p_id9 mar_bot  p_text" id="id9002">В нашем активе успешно выполненные проекты
                 для Национального банка Республики Беларусь и банковского сообщества
                 в сфере проектирования и разработки решений для финансово-кредитного  бизнеса</p>
-                <a href="#" class="button_main" id="id9003">Подробнее</a>
+                <a class="button_main but_id9" id="id9003">Подробнее</a>
             </div>
-            <div class="col-12 col-lg-4">
-              <p class="img_id9">
-              <img src="image\id9005.png" id="id9004">
-            </p>
+            <div class="col-12 col-lg-4 p-0 align-self-center">
+              <p class="img_center">
+                <img src="image\id9005.png" class="img_u img_id9" alt="" id="id9004">
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container-fluid" id="id11000">
+      </section>
+      <section class="main_home_id11" id="id11000">
         <div class="wrapper">
-          <div class="d-flex justify-content-center" >
-            <div class="col">
-              <h1 id="id11001">Наши клиенты и партнеры</h1>
-              <hr class="hr_id10000">
-              <img src="image\id10003.png" id="id11003">
-              <img src="image\id10004.png" id="id11004">
+          <div class="row m-0">
+            <div class="col-12 col-md-8 p-0">
+              <h1 class="h1_home h1_id11" id="id11001">Наши клиенты и партнеры</h1>
+              <hr class="hr_id11000">
+              <img src="image\id10003.png" class="align-self-center "id="id11002">
+              <img src="image\id10004.png" id="id11003">
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <footer id="id10000">
-      <div class="wrapper wraperF1">
-        <div class="d-flex justify-content-between">
-          <div class="footer-left" id="id10100">
-            <ul class="list-unstyled text-small">
-              <li class="ulf"><a href="our_services.html" class="footer1" id="id10101">Наши услуги</a></li>
-              <li class="ulf"><a href="message_directory.html" class="footer1" id="id10102">Каталог сообщений</a></li>
-              <li class="ulf"><a href="repository.html" class="footer1" id="id10103">Репозиторий</a></li>
-              <li class="ulf"><a href="developing.html" class="footer1" id="id10104">Новости</a></li>
-              <li class="ulf"><a href="about_iso20022.html" class="footer1" id="id10105">Об ISO 20022</a></li>
-              <li class="ulf"><a href="useful_links.html" class="footer1" id="id10106">Полезные ссылки</a></li>
+    <footer class="footer" id="id10000">
+      <div class="wrapper">
+        <div class="row m-0">
+          <div class="col-6 col-sm-4 p-0" id="id10100">
+            <ul class="list-unstyled">
+              <li class="footer_item footer_bot1"><a href="our_services.html" class="footer_a" id="id10101">Наши услуги</a></li>
+              <li class="footer_item"><a href="message_directory.html" class="footer_a" id="id10102">Каталог сообщений</a></li>
+              <li class="footer_item"><a href="repository.html" class="footer_a" id="id10103">Репозиторий</a></li>
+              <li class="footer_item"><a href="developing.html" class="footer_a" id="id10104">Новости</a></li>
+              <li class="footer_item"><a href="about_iso20022.html" class="footer_a" id="id10105">Об ISO 20022</a></li>
+              <li class="footer_item"><a href="useful_links.html" class="footer_a" id="id10106">Полезные ссылки</a></li>
             </ul>
           </div>
-          <div class="footer-center" id="id10200">
-            <ul class="list-unstyled text-small">
-              <li class="ulf"><a href="message_directory_c.html" class="footer1" id="id10201">Полный каталог сообщений</a></li>
-              <li class="ulf"><a href="message_directory_b.html" class="footer1" id="id10202">Каталоги сообщений по бизнес-областям</a></li>
-              <li class="ulf"><a href="additional_inf.html" class="footer1" id="id10203">Дополнительная информация</a></li>
-              <li class="ulf"><a href="#" class="footer1" id="id10204">Архив сообщений</a></li>
-              <li class="ulf"><a href="http://10.3.29.161:8081/#/" id="id10205" class="footer1" target="_blank">API iso20022.by</a></li>
+          <div class="col-6 col-sm-4 footer_center" id="id10200">
+            <ul class="list-unstyled">
+              <li class="footer_item footer_bot1"><a href="message_directory_c.html" class="footer_a" id="id10201">Полный каталог сообщений</a></li>
+              <li class="footer_item"><a href="message_directory_b.html" class="footer_a" id="id10202">Каталоги сообщений по бизнес-областям</a></li>
+              <li class="footer_item"><a href="additional_inf.html" class="footer_a" id="id10203">Дополнительная информация</a></li>
+              <li class="footer_item"><a class="footer_a" id="id10204">Архив сообщений</a></li>
+              <li class="footer_item"><a href="http://10.3.29.161:8081/#/" id="id10205" class="footer_a" target="_blank">API iso20022.by</a></li>
             </ul>
           </div>
-          <div class="footer-right" id="id10300">
-            <ul class="list-unstyled text-small">
-              <li class="ulf"><p class="footer1" id="id10301">Контактная информация</p></li>
-              <li class="ulf"><p class="footer1" id="id10304">ОАО “Белорусский межбанковский
-                                                          <br>расчетный центр”</p></li>
-              <li class="ulf"><p class="footer1" id="id10303">Адрес: 220048, Республика Беларусь,
-                                                          <br>г. Минск, ул. Кальварийская, 7</p></li>
-              <li class="ulf"><p class="footer1" id="id10305">Телефон: +375 17 259 14 11</p></li>
-              <li class="ulf1"><a href="https://bisc.by/" class="footer1" id="id10306">Сайт: www.bisc.by</a></li>
+          <div class="col-12 col-sm-4 footer_right" id="id10300">
+            <ul class="list-unstyled">
+              <li class="footer_item footer_bot2"><p class="footer_a f_contact" id="id10301">Контактная информация</p></li>
+              <li class="footer_item footer_bot2"><p class="footer_a" id="id10304">ОАО “Белорусский межбанковский
+                                                                                  расчетный центр”</p></li>
+              <li class="footer_item footer_bot1"><p class="footer_a" id="id10303">Адрес: 220048, Республика Беларусь,
+                                                                      г. Минск, ул. Кальварийская, 7</p></li>
+              <li class="footer_item"><p class="footer_a" id="id10305">Телефон: +375 17 259 14 11</p></li>
+              <li class="footer_item"><p class="footer_a">Сайт:<a href="https://bisc.by/" class="footer_a" target="_blank" id="id10306"> www.bisc.by</a></p></li>
             </ul>
           </div>
         </div>
-        <hr>
-      <div class="d-flex justify-content-between" id="id10400">
-        <div class="footer-1">
-          <div class="row">
-            <div class="col f1">
-              <a href="#" class="af af1" id="id10401">© Copyright 2021 - ОАО "БМРЦ". Все права защищены.</a>
-            </div>
+        <hr class="hr_footer">
+        <div class="row f_end"  id="id10400">
+          <div class="col-12 col-md-6 p-0">
+            <p class="mar_bot a_f a_f_r">© Copyright 2021 - <a href="https://bisc.by/" target="_blank" class="a_f" id="id10401">ОАО "БМРЦ"</a>. Все права защищены.</p>
           </div>
-        </div>
-        <div class="footer-2">
-          <div class="row">
-            <div class="col f1">
-              <a href="https://bisc.by/politika-zashchity-i-obrabotki-personalnykh-dannykh" class="af" id="id10402">Политика конфиденциальности</a>
-              <div class="vl"></div>
-              <a href="#" class="af"  id="id10403">Карта сайта</a>
-            </div>
+          <hr class="d-md-none hr_end">
+          <div class="col-12 col-md-auto ms-md-auto p-0 d-flex">
+            <a href="https://bisc.by/politika-zashchity-i-obrabotki-personalnykh-dannykh" class="a_f a_f_r" target="_blank" id="id10402">Политика конфиденциальности</a>
+            <div class="vl_footer"></div>
+            <a class="a_f a_f_r" id="id10403">Карта сайта</a>
           </div>
         </div>
       </div>
-    </div>
     </footer>
     <script src="bootstrap\dist\js\bootstrap.bundle.min.js"></script>
   </body>

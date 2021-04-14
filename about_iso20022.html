@@ -9,99 +9,102 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header id="id1000">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="header-left">
-            <div class="row">
-              <div class="col col-h-1 col-6 col-lg" id="A2">
-                <a href="https://bisc.by/" target="_blank">
-                  <img src="image\flower.png" id="id1001" alt="">
+    <header class="header" id="id1000">
+      <div class="wrapper">
+        <div class="wrapper_header d-md-flex">
+          <div class="header_logo">
+            <a href="https://bisc.by/" target="_blank" class="header_logo_link">
+              <img src="image\flower.png" alt="" class="header_logo_pic" id="id1001">
+            </a>
+            <nav class="header_nav">
+              <ul class="header_list">
+                <li class="header_item_id11">
+                    <a href="index.html" class="a_header a_logo" id="id1002">ISO 20022 BY</a>
+                  </li>
+                <li class="header_item_id11">
+                    <a href="about_iso20022.html" class=" a_header" id="id1003">Об ISO 20022</a>
+                  </li>
+                <li class="header_item_id11">
+                  <a href="useful_links.html" class="a_header" id="id1004">Полезные ссылки</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <nav class="header_nav">
+            <ul class="header_list">
+              <li class="header_item_id12">
+                <a href="mailto:info@iso20022.by" class="a_header header_link" id="id1005">info@iso20022.by</a>
+              </li>
+              <li class="header_item_id12 dropdown">
+                <a class="a_header nav-link dropdown-toggle p-0" id="id1006" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Русский (RU-BY)
                 </a>
-              </div>
-              <div class="col col-h-1 col-6 col-lg">
-                <a href="index.html" class="navbar-brand header1" id="id1002">ISO 20022 BY</a>
-              </div>
-              <div class="col col-h-1 col-6 col-lg">
-                <a href="about_iso20022.html" class="navbar-brand header1" id="id1003">Об ISO 20022</a>
-              </div>
-              <div class="col col-h-1 col-6 col-lg">
-                <a href="useful_links.html" class="navbar-brand header1" id="id1004">Полезные ссылки</a>
-              </div>
-            </div>
-          </div>
-          <div class="header-right">
-            <div class="row">
-              <div class="col col-h-1">
-                <a href="mailto:info@iso20022.by" class="navbar-brand header1" id="id1005">info@iso20022.by</a>
-              </div>
-              <div class="col col-h-1">
-                <div class="btn-group">
-                  <a class="dropdown-toggle" href="#" id="id1006" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Русский (RU-BY)
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Выбор языка / Select language</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <div class="row">
-                      <div class="column">
-                        <li><a class="dropdown-item" href="#">Беларусь - Русский (RU-BY)</a></li>
-                        <li><a class="dropdown-item" href="#">Казахстан - Русский (RU-KZ)</a></li>
-                        <li><a class="dropdown-item" href="#">Киргизия - Русский (RU-KG)</a></li>
-                        <li><a class="dropdown-item" href="#">Россия - Русский (RU)</a></li>
-                        <li><a class="dropdown-item" href="#">Հայաստան - Hայերեն (AM)</a></li>
-                        <li><a class="dropdown-item" href="#">English (EN)</a></li>
-                      </div>
-                      <div class="column">
-                        <li><a class="dropdown-item" href="#">Việt Nam - Tiếng Việt (VN)</a></li>
-                        <li><a class="dropdown-item" href="#">ایران - ایرانی (IR)</a></li>
-                        <li><a class="dropdown-item" href="#">Singapore - English (EN-SG)</a></li>
-                        <li><a class="dropdown-item" href="#">Србија - Српски (RS)</a></li>
-                        <li><a class="dropdown-item" href="#">Moldova - Română (RO-MD)</a></li>
-                        <li><a class="dropdown-item" href="#">O'zbekiston - O'zbek (UZ)</a></li>
-                        <li><a class="dropdown-item" href="#">Cuba - Español (ES-CU)</a></li>
-                      </div>
-                      <div class="column">
-                        <li><a class="dropdown-item" href="#">مصر - مصرية (EG)</a></li>
-                        <li><a class="dropdown-item" href="#">ישראל - עִברִית (IL)</a></li>
-                        <li><a class="dropdown-item" href="#">India - English (EN-IN)</a></li>
-                        <li><a class="dropdown-item" href="#">中國 - 中國人 (CN)</a></li>
-                        <li><a class="dropdown-item" href="#">Монгол Улс - Монгол (MN)</a></li>
-                        <li><a class="dropdown-item" href="#">ประเทศไทย - ไทย (TH)</a></li>
-                      </div>
+                <!--<ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="id1001">
+                  <li><a class="dropdown-item" href="#">Выбор языка / Select language</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <div class="row">
+                    <div class="col">
+                      <li><a class="dropdown-item" href="#">Беларусь - Русский (RU-BY)</a></li>
+                      <li><a class="dropdown-item" href="#">Казахстан - Русский (RU-KZ)</a></li>
+                      <li><a class="dropdown-item" href="#">Киргизия - Русский (RU-KG)</a></li>
+                      <li><a class="dropdown-item" href="#">Россия - Русский (RU)</a></li>
+                      <li><a class="dropdown-item" href="#">Հայաստան - Hայերեն (AM)</a></li>
+                      <li><a class="dropdown-item" href="#">English (EN)</a></li>
                     </div>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+                    <div class="col">
+                      <li><a class="dropdown-item" href="#">Việt Nam - Tiếng Việt (VN)</a></li>
+                      <li><a class="dropdown-item" href="#">ایران - ایرانی (IR)</a></li>
+                      <li><a class="dropdown-item" href="#">Singapore - English (EN-SG)</a></li>
+                      <li><a class="dropdown-item" href="#">Србија - Српски (RS)</a></li>
+                      <li><a class="dropdown-item" href="#">Moldova - Română (RO-MD)</a></li>
+                      <li><a class="dropdown-item" href="#">O'zbekiston - O'zbek (UZ)</a></li>
+                      <li><a class="dropdown-item" href="#">Cuba - Español (ES-CU)</a></li>
+                    </div>
+                    <div class="col">
+                      <li><a class="dropdown-item" href="#">مصر - مصرية (EG)</a></li>
+                      <li><a class="dropdown-item" href="#">ישראל - עִברִית (IL)</a></li>
+                      <li><a class="dropdown-item" href="#">India - English (EN-IN)</a></li>
+                      <li><a class="dropdown-item" href="#">中國 - 中國人 (CN)</a></li>
+                      <li><a class="dropdown-item" href="#">Монгол Улс - Монгол (MN)</a></li>
+                      <li><a class="dropdown-item" href="#">ประเทศไทย - ไทย (TH)</a></li>
+                    </div>
+                  </div>
+                </ul>-->
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
-    <header id="id2000">
-      <div class="container">
-        <div class="d-lg-flex justify-content-evenly align-items-center">
-            <div class="text-center">
-              <a href="our_services.html" class="header2" id="id2001">Наши услуги</a></div>
-            <div class="text-center">
-              <a href="message_directory.html" class="header2" id="id2002">Каталог сообщений</a></div>
-            <div class="text-center">
-              <a href="repository.html" class="header2" id="id2003">Репозиторий</a></div>
-            <div class="text-center">
-              <a href="developing.html" class="header2" id="id2004">Новости</a></div>
-            <div class="text-center">
-              <a href="contact_inf.html" class="header2" id="id2005">Контактная информация</a></div>
-            <div class="text-center">
-              <a href="#" class="header2" id="id2005">
-                <img src="image\find.png">
-              </a>
-            </div>
-            <div class="text-center">
-              <a href="#" class="header2"id="id2006">
-                <img src="image\come_in.png">
-              </a>
-            </div>
-        </div>
+    <header class="header_id2" id="id2000">
+      <div class="wrapper">
+        <ul class="header_list_id2 d-md-flex justify-content-evenly">
+          <li class="header_item_id2">
+                <a href="our_services.html" class="a_header a_header_white" id="id2001">Наши услуги</a>
+              </li>
+          <li class="header_item_id2">
+                <a href="message_directory.html" class="a_header a_header_white" id="id2002">Каталог сообщений</a>
+              </li>
+          <li class="header_item_id2">
+                <a href="repository.html" class="a_header a_header_white" id="id2003">Репозиторий</a>
+              </li>
+          <li class="header_item_id2">
+                <a href="developing.html" class="a_header a_header_white" id="id2004">Новости</a>
+              </li>
+          <li class="header_item_id2">
+                <a href="contact_inf.html" class="a_header a_header_white" id="id2005">Контактная информация</a>
+              </li>
+          <li class="header_item_id2">
+                <a  class="a_header a_header_white" id="id2006">
+                  <img src="image\find.png">
+                </a>
+              </li>
+          <li class="header_item_id2">
+                  <a  class="a_header a_header_white"id="id2007">
+                    <img src="image\come_in.png">
+                  </a>
+              </li>
+            </ul>
       </div>
     </header>
     <main>
@@ -225,60 +228,53 @@
         </div>
       </section>
     </main>
-    <footer id="id10000">
-      <div class="wrapper wraperF1">
-        <div class="d-flex justify-content-between">
-          <div class="footer-left" id="id10100">
-            <ul class="list-unstyled text-small">
-              <li class="ulf"><a href="our_services.html" class="footer1" id="id10101">Наши услуги</a></li>
-              <li class="ulf"><a href="message_directory.html" class="footer1" id="id10102">Каталог сообщений</a></li>
-              <li class="ulf"><a href="repository.html" class="footer1" id="id10103">Репозиторий</a></li>
-              <li class="ulf"><a href="developing.html" class="footer1" id="id10104">Новости</a></li>
-              <li class="ulf"><a href="about_iso20022.html" class="footer1" id="id10105">Об ISO 20022</a></li>
-              <li class="ulf"><a href="useful_links.html" class="footer1" id="id10106">Полезные ссылки</a></li>
+    <footer class="footer" id="id10000">
+      <div class="wrapper">
+        <div class="row m-0">
+          <div class="col-6 col-sm-4 p-0" id="id10100">
+            <ul class="list-unstyled">
+              <li class="footer_item footer_bot1"><a href="our_services.html" class="footer_a" id="id10101">Наши услуги</a></li>
+              <li class="footer_item"><a href="message_directory.html" class="footer_a" id="id10102">Каталог сообщений</a></li>
+              <li class="footer_item"><a href="repository.html" class="footer_a" id="id10103">Репозиторий</a></li>
+              <li class="footer_item"><a href="developing.html" class="footer_a" id="id10104">Новости</a></li>
+              <li class="footer_item"><a href="about_iso20022.html" class="footer_a" id="id10105">Об ISO 20022</a></li>
+              <li class="footer_item"><a href="useful_links.html" class="footer_a" id="id10106">Полезные ссылки</a></li>
             </ul>
           </div>
-          <div class="footer-center" id="id10200">
-            <ul class="list-unstyled text-small">
-              <li class="ulf"><a href="message_directory_c.html" class="footer1" id="id10201">Полный каталог сообщений</a></li>
-              <li class="ulf"><a href="message_directory_b.html" class="footer1" id="id10202">Каталоги сообщений по бизнес-областям</a></li>
-              <li class="ulf"><a href="additional_inf.html" class="footer1" id="id10203">Дополнительная информация</a></li>
-              <li class="ulf"><a href="#" class="footer1" id="id10204">Архив сообщений</a></li>
-              <li class="ulf"><a href="http://10.3.29.161:8081/#/" id="id10205" class="footer1" target="_blank">API iso20022.by</a></li>
+          <div class="col-6 col-sm-4 footer_center" id="id10200">
+            <ul class="list-unstyled">
+              <li class="footer_item footer_bot1"><a href="message_directory_c.html" class="footer_a" id="id10201">Полный каталог сообщений</a></li>
+              <li class="footer_item"><a href="message_directory_b.html" class="footer_a" id="id10202">Каталоги сообщений по бизнес-областям</a></li>
+              <li class="footer_item"><a href="additional_inf.html" class="footer_a" id="id10203">Дополнительная информация</a></li>
+              <li class="footer_item"><a class="footer_a" id="id10204">Архив сообщений</a></li>
+              <li class="footer_item"><a href="http://10.3.29.161:8081/#/" id="id10205" class="footer_a" target="_blank">API iso20022.by</a></li>
             </ul>
           </div>
-          <div class="footer-right" id="id10300">
-            <ul class="list-unstyled text-small">
-              <li class="ulf"><p class="footer1" id="id10301">Контактная информация</p></li>
-              <li class="ulf"><p class="footer1" id="id10304">ОАО “Белорусский межбанковский
-                                                          <br>расчетный центр”</p></li>
-              <li class="ulf"><p class="footer1" id="id10303">Адрес: 220048, Республика Беларусь,
-                                                          <br>г. Минск, ул. Кальварийская, 7</p></li>
-              <li class="ulf"><p class="footer1" id="id10305">Телефон: +375 17 259 14 11</p></li>
-              <li class="ulf1"><a href="https://bisc.by/" class="footer1" id="id10306">Сайт: www.bisc.by</a></li>
+          <div class="col-12 col-sm-4 footer_right" id="id10300">
+            <ul class="list-unstyled">
+              <li class="footer_item footer_bot2"><p class="footer_a f_contact" id="id10301">Контактная информация</p></li>
+              <li class="footer_item footer_bot2"><p class="footer_a" id="id10304">ОАО “Белорусский межбанковский
+                                                                                  расчетный центр”</p></li>
+              <li class="footer_item footer_bot1"><p class="footer_a" id="id10303">Адрес: 220048, Республика Беларусь,
+                                                                      г. Минск, ул. Кальварийская, 7</p></li>
+              <li class="footer_item"><p class="footer_a" id="id10305">Телефон: +375 17 259 14 11</p></li>
+              <li class="footer_item"><p class="footer_a">Сайт:<a href="https://bisc.by/" class="footer_a" target="_blank" id="id10306"> www.bisc.by</a></p></li>
             </ul>
           </div>
         </div>
-        <hr>
-      <div class="d-flex justify-content-between" id="id10400">
-        <div class="footer-1">
-          <div class="row">
-            <div class="col f1">
-              <a href="#" class="af af1" id="id10401">© Copyright 2021 - ОАО "БМРЦ". Все права защищены.</a>
-            </div>
+        <hr class="hr_footer">
+        <div class="row f_end"  id="id10400">
+          <div class="col-12 col-md-6 p-0">
+            <p class="mar_bot a_f a_f_r">© Copyright 2021 - <a href="https://bisc.by/" target="_blank" class="a_f" id="id10401">ОАО "БМРЦ"</a>. Все права защищены.</p>
           </div>
-        </div>
-        <div class="footer-2">
-          <div class="row">
-            <div class="col f1">
-              <a href="https://bisc.by/politika-zashchity-i-obrabotki-personalnykh-dannykh" class="af" id="id10402">Политика конфиденциальности</a>
-              <div class="vl"></div>
-              <a href="#" class="af"  id="id10403">Карта сайта</a>
-            </div>
+          <hr class="d-md-none hr_end">
+          <div class="col-12 col-md-auto ms-md-auto p-0 d-flex">
+            <a href="https://bisc.by/politika-zashchity-i-obrabotki-personalnykh-dannykh" class="a_f a_f_r" target="_blank" id="id10402">Политика конфиденциальности</a>
+            <div class="vl_footer"></div>
+            <a class="a_f a_f_r" id="id10403">Карта сайта</a>
           </div>
         </div>
       </div>
-    </div>
     </footer>
     <script src="bootstrap\dist\js\bootstrap.bundle.min.js"></script>
   </body>
