@@ -7,8 +7,19 @@ body, html
   font-size: 14px;
   --bs-font-sans-serif:Arial;
 }
+a{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+  text-decoration: none;
+}
 p{
   margin-bottom: 12px;
+}
+hr{
+  margin: 0;
 }
 .img_u{
   max-width: 100%;
@@ -532,6 +543,10 @@ a.button_main{
 .main_hr1_contact{
   margin-bottom: 10px;
 }
+.hr_main_nav{
+  margin: 5px 0 5px;
+  border: 1px solid #3794D1;
+}
 /*Навигация main end*/
 
 /*Middle main start*/
@@ -568,6 +583,9 @@ a.button_main{
   line-height: 21px;
   color: #3794D1;
 }
+.p_a_inf_black{
+  color: #666666;
+}
 .vl_inf{
   height: 140px;
   width: 0;
@@ -576,6 +594,15 @@ a.button_main{
 }
 .h2_inf_black{
   color: #666666;
+}
+.h3_inf{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #666666;
+}
+.h3_inf_blue{
 }
 /*Middle main end*/
 .a_line{
@@ -697,3 +724,80 @@ a.button_main1{
     padding: 0;
   }
 }
+/*Start Полезные ссылки*/
+.section2_links{
+  min-height: 403px;
+  background: url('image/link.jpg') no-repeat center;
+  background-size: cover;
+}
+.section3_links{
+
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+  backdrop-filter: blur(4px);
+  padding: 58px 0;
+}
+.h2_link_inf{
+  margin-bottom: 20px;
+}
+.p_inf_bold{
+  font-weight: bold;
+}
+.col4_start{
+  padding-right: 0;
+  padding-left: 7.752%;
+}
+.p_col4_1{
+  margin-bottom: 30px;
+}
+.p_col4_2{
+  margin-bottom: 10px;
+}
+.sec3_2{
+  padding-bottom: 29px;
+}
+.hr_link{
+  border: 1px solid rgba(102, 102, 102, 0.3);
+  padding: 0;
+}
+.h3_inf_link{
+  margin-bottom: 20px;
+}
+.sec3_2 h3{
+  padding-top: 57px;
+}
+.sec3_3 h3, .sec3_4 h3{
+  padding-top: 30px;
+}
+.p_links_bot{
+  padding-bottom: 29px;
+}
+.p_links_sec3_1{
+  padding-bottom: 57px;
+}
+.col6_r{
+  padding: 0 0 0 15px;
+}
+.col6_l{
+  padding: 0 15px 0 0;
+}
+.sec3_2 .col6_l .p_links_bot,.sec3_4 .col6_l .p_links_bot{
+  padding-bottom: 0px;
+}
+@media (max-width: 767px) {
+  .col4_start{
+    padding: 0;
+  }
+  .p_links_sec3_1{
+    padding-bottom: 30px;
+  }
+  .sec3_2 .col6_l .p_links_bot,.sec3_4 .col6_l .p_links_bot{
+    padding-bottom: 30px;
+  }
+  .col6_l, .col6_r{
+    padding: 0;
+  }
+  .sec3_2 h3{
+    padding-top: 31px;
+  }
+}
+/*EDN полезные ссылки*/
