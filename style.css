@@ -346,6 +346,14 @@ a.button_main{
   border: 1px solid #3794D1;
   margin: 0 9px;
 }
+.vl_news_black{
+  height: 16px;
+  border: 1px solid #666666;
+  margin: 0 9px;
+}
+.p_news_black{
+  color: #666666;
+}
 /*News block end*/
 /*Footer старт*/
 .footer{
@@ -586,6 +594,9 @@ a.button_main{
 .p_a_inf_black{
   color: #666666;
 }
+.p_a_inf_white{
+  color: #FFFFFF;
+}
 .vl_inf{
   height: 140px;
   width: 0;
@@ -603,11 +614,14 @@ a.button_main{
   color: #666666;
 }
 .h3_inf_blue{
+  color: #3794D1;
+}
+.h3_inf_white{
+  color: #FFFFFF;
 }
 /*Middle main end*/
 .a_line{
   text-decoration-line: underline;
-  color: #3794D1;
 }
 
 /*Об ISO20022 start*/
@@ -801,3 +815,88 @@ a.button_main1{
   }
 }
 /*EDN полезные ссылки*/
+/*Start Новости*/
+.section2_news{
+  min-height: 403px;
+  background: url('image/news.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 47px;
+}
+.col7_l{
+  padding: 0 12.5px 0 0;
+}
+.sec2_1_news{
+  padding: 20px 0  11px 20px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.p_inf_add_news{
+  margin-bottom: 4px;
+}
+.h2_inf_news{
+  margin-bottom: 10px;
+}
+.section3_news{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+  backdrop-filter: blur(4px);
+  padding: 59px 0 49px;
+}
+.section4_news{
+  background: #3794D1;
+  backdrop-filter: blur(4px);
+  padding: 51px 0 49px;
+}
+.sec31_news img, .sec32_news img{
+  padding-bottom: 30px;
+}
+.h3_inf_news{
+  margin: 10px 0;
+}
+.h3_sec4{
+  margin-bottom: 20px;
+}
+.sec31_news .mar_bot{
+  padding-bottom: 75px;
+}
+.sec32_news .mar_bot{
+  padding-bottom: 32px;
+}
+.p_news_end{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  text-decoration: underline;
+  float: right;
+  color: #3794D1;
+}
+.p_sec4{
+  margin-bottom: 40px;
+}
+.p_sec4_1{
+  margin-bottom: 24px;
+}
+.sec4_1{
+  padding: 20px 27px 25px;
+  background: rgba(255, 255, 255, 0.3);
+  align-items: center;
+  text-align: center;
+}
+.sec4_1 a.button_main1{
+  border: 0;
+  margin: 0;
+}
+.col4_sec4_1{
+  padding: 0 0 0 20px;
+}
+@media (max-width: 767px) {
+  .sec4_1{
+    margin-top: 32px;
+  }
+  .sec31_news .mar_bot{
+    padding-bottom: 32px;
+  }
+  .col4_sec4_1{
+    padding: 0;
+  }
+}
+/*End Новости*/
