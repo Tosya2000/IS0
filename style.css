@@ -503,6 +503,16 @@ a.button_main{
   text-decoration-line: underline;
   color: #3794D1;
 }
+@media (max-width: 767px) {
+  .h1_developing{
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .h2_developing{
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
 /*В разработке END*/
 
 .contact_1{
@@ -736,6 +746,10 @@ a.button_main1{
 @media (max-width: 767px) {
   .col_home_l,.col_home_r{
     padding: 0;
+  }
+  .contact_3 .h2_inf{
+    font-size: 30px;
+    line-height: 34px;
   }
 }
 /*Start Полезные ссылки*/
