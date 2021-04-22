@@ -355,6 +355,75 @@ a.button_main{
   color: #666666;
 }
 /*News block end*/
+@media (min-width: 992px) {
+  .inf_news{
+    height: 243px;
+  }
+  .but_id5{
+    margin-top: 15px;
+  }
+  .h1_id5{
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+  .carousel-indicators [data-bs-target]{
+    margin-top: 5px;
+  }
+  #id5000 img{
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .inf_news{
+    height: 180px;
+  }
+  .h1_id5{
+    margin-bottom: 40px;
+  }
+  .but_id5{
+    margin-top: 39.5px;
+  }
+  #id5000 img{
+    max-width: 537.5px;
+  }
+  .carousel-indicators [data-bs-target]{
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .inf_news{
+    height: 159px;
+  }
+  .h1_id5{
+    margin-top: 10px;
+    margin-bottom: 86px;
+  }
+  .but_id5{
+    margin-top: 71px;
+  }
+  #id5000 img{
+    max-width: 645px;
+  }
+  .carousel-indicators [data-bs-target]{
+    margin-top: 35px;
+  }
+}
+@media (min-width: 1680px) {
+  .wrapper{
+    max-width: 1530px;
+  }
+  .h1_id5{
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  .but_id5{
+    margin-top: 126.81px;
+  }
+  #id5000 img{
+    max-width: 100%;
+  }
+}
 /*Footer старт*/
 .footer{
   min-height: 314px;
