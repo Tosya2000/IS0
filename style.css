@@ -355,6 +355,15 @@ a.button_main{
   color: #666666;
 }
 /*News block end*/
+@media (max-width: 991px) {
+  .wrapper{
+    max-width: 84.864%;
+    /*max-width: 89.91%;*/
+  }
+  #id5000 img{
+    max-width: 100%;
+  }
+}
 @media (min-width: 992px) {
   .inf_news{
     height: 243px;
