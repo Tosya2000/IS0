@@ -197,13 +197,11 @@ a.button_main{
   min-height: 391px;
 }
 .main_home_r{
-  min-height: 529px;
   background: #FFFFFF;
   backdrop-filter: blur(4px);
   padding: 50px 0;
 }
 .main_home_l{
-  min-height: 529px;
   padding: 50px 0;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 0.01%);
   backdrop-filter: blur(4px);
