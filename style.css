@@ -361,9 +361,6 @@ a.button_main{
   #id5000 img{
     max-width: 100%;
   }
-  #id5000 .col_home_r{
-    padding: 0;
-  }
 }
 @media (min-width: 992px) {
   .inf_news{
