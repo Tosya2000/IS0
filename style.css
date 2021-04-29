@@ -555,6 +555,12 @@ a.button_main{
   .but_id7, .but_id6, .but_id8{
     margin-top: 78px;
   }
+  #id4000 .inf_99{
+    height: 138px;
+  }
+  #id9000 .inf_99{
+    height: 180px;
+  }
 }
 
 @media (min-width: 1680px) {
@@ -577,10 +583,6 @@ a.button_main{
   }
   .but_id7, .but_id6, .but_id8{
     margin-top: 115.81px;
-  }
-  #id9003{
-    margin-top: 50px;
-    margin-bottom: 0;
   }
 }
 
