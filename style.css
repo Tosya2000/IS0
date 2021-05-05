@@ -1136,3 +1136,33 @@ a.button_main1{
   }
 }
 /*End Новости*/
+
+/*БЛОК полный каталог START*/
+.find_block{
+  padding: 65px 0;
+  background: #666666;
+  backdrop-filter: blur(4px);
+}
+.h2_find_block{
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.h2_find_block_grey{
+  color: #C4C4C4;
+}
+.sec3_mes{
+  padding: 58px 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+  backdrop-filter: blur(4px);
+}
+.sec3_mes_1, .sec3_mes_2{
+  padding: 25px 80px;
+  background: rgba(55, 148, 209, 0.3);
+}
+.sec3_mes_1{
+  margin-bottom: 10px;
+}
+/*БЛОК полный каталог END*/
