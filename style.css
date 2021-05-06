@@ -1162,7 +1162,62 @@ a.button_main1{
   padding: 25px 80px;
   background: rgba(55, 148, 209, 0.3);
 }
-.sec3_mes_1{
-  margin-bottom: 10px;
+.sec3_mes_2{
+  margin-top: 10px;
+}
+.col_mes_margent{
+  margin-right: 70px;
+}
+.col_mes_margent_1{
+  margin-left: 129px;
+}
+.sec3_mes_1_dop{
+  background: #FFFFFF;
+  padding: 29px 80px;
+}
+.accordion-button{
+  padding: 0;
+  border: 0;
+}
+.accordion-collapse {
+  border: 0;
+}
+.accordion-button .collapsed {
+    border: 0;
+}
+.accordion-button:focus {
+    border-color: inherit;
+    box-shadow: inherit;
+}
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color:inherit;
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 146px;
+    height: 23px;
+    background-image: url('image/expand.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('image/hide.png');
+    transform: rotate(0deg);
+}
+.accordion-body{
+  padding: 0;
+}
+.hr_mess{
+  padding: 0;
+  margin: 0;
+  border: 1px solid #D0D3D5;
+}
+.but_xsd{
+  margin-left: 41px;
+}
+.id_mes_mar{
+  margin-right: 95px;
 }
 /*БЛОК полный каталог END*/

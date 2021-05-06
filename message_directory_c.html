@@ -2,6 +2,7 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Полный котолог сообщений</title>
     <link rel="stylesheet" href="bootstrap\dist\css\bootstrap.css">
     <link rel="stylesheet" href="bootstrap\dist\css\bootstrap-grid.css">
@@ -139,16 +140,203 @@
       </section>
       <section class="sec3_mes">
         <div class="wrapper">
-          <section class="sec3_mes_1">
-              <a>
-                <img src="image\download.jpg">
-              </a>
-          </section>
-          <section class="sec3_mes_2">
-            <a>
-              <img src="image\download.jpg">
-            </a>
-          </section>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <section class="sec3_mes_1 accordion-header" id="headingTwo">
+                  <div class="row m-0">
+                    <div class="col-auto p-0 align-self-center col_mes_margent">
+                      <p class="p_inf_add p_inf_bold mar_bot">pacs</p>
+                    </div>
+                    <div class="col-auto p-0 align-self-center">
+                      <p class="p_inf_add p_inf_bold mar_bot">Платежи и расчеты</p>
+                    </div>
+                    <div class="col-auto p-0 align-self-center ms-auto">
+                      <a>
+                        <img src="image\download.jpg">
+                      </a>
+                    </div>
+                    <div class="col-auto p-0 align-self-center col_mes_margent_1">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      </button>
+                    </div>
+                  </div>
+              </section>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <section class="sec3_mes_1_dop">
+                    <div class="row m-0">
+                      <div class="col-auto p-0 align-self-center id_mes_mar">
+                        <p class="p_inf mar_bot">pacs.008.001.09</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center">
+                        <p class="p_inf mar_bot">Межбанковский клиентский кредитовый перевод</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center ms-auto">
+                        <a>
+                          <img src="image\more.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-auto p-0 align-self-center but_xsd">
+                        <a>
+                          <img src="image\xsd.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <hr class="hr_mess">
+                  <section class="sec3_mes_1_dop">
+                    <div class="row m-0">
+                      <div class="col-auto p-0 align-self-center id_mes_mar">
+                        <p class="p_inf mar_bot">pacs.009.001.09</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center">
+                        <p class="p_inf mar_bot">Межбанковский кредитовый перевод</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center ms-auto">
+                        <a>
+                          <img src="image\more.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-auto p-0 align-self-center but_xsd">
+                        <a>
+                          <img src="image\xsd.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <hr class="hr_mess">
+                  <section class="sec3_mes_1_dop">
+                    <div class="row m-0">
+                      <div class="col-auto p-0 align-self-center id_mes_mar">
+                        <p class="p_inf mar_bot">pacs.002.001.11</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center">
+                        <p class="p_inf mar_bot">Отчет банку о статусе перевода</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center ms-auto">
+                        <a>
+                          <img src="image\more.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-auto p-0 align-self-center but_xsd">
+                        <a>
+                          <img src="image\xsd.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <section class="sec3_mes_2 accordion-header" id="headingOne">
+                <div class="row m-0">
+                  <div class="col-auto p-0 align-self-center col_mes_margent">
+                  <p class="p_inf_add p_inf_bold mar_bot">camt</p>
+                </div>
+                  <div class="col-auto p-0 align-self-center">
+                  <p class="p_inf_add p_inf_bold mar_bot">Управление деньгами</p>
+                </div>
+                  <div class="col-auto p-0 align-self-center ms-auto">
+                  <a>
+                    <img src="image\download.jpg">
+                  </a>
+                </div>
+                  <div class="col-auto p-0 align-self-center col_mes_margent_1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    </button>
+                  </div>
+                </div>
+              </section>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <section class="sec3_mes_1_dop">
+                    <div class="row m-0">
+                      <div class="col-auto p-0 align-self-center id_mes_mar">
+                        <p class="p_inf mar_bot">camt.053.001.08</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center">
+                        <p class="p_inf mar_bot">Выписка по счету клиента за период</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center ms-auto">
+                        <a>
+                          <img src="image\more.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-auto p-0 align-self-center but_xsd">
+                        <a>
+                          <img src="image\xsd.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <hr class="hr_mess">
+                  <section class="sec3_mes_1_dop">
+                    <div class="row m-0">
+                      <div class="col-auto p-0 align-self-center id_mes_mar">
+                        <p class="p_inf mar_bot">camt.054.001.08</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center">
+                        <p class="p_inf mar_bot">Уведомление о движении денежных средств по счету клиента</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center ms-auto">
+                        <a>
+                          <img src="image\more.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-auto p-0 align-self-center but_xsd">
+                        <a>
+                          <img src="image\xsd.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <hr class="hr_mess">
+                  <section class="sec3_mes_1_dop">
+                    <div class="row m-0">
+                      <div class="col-auto p-0 align-self-center id_mes_mar">
+                        <p class="p_inf mar_bot">camt.060.001.05</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center">
+                        <p class="p_inf mar_bot">Запрос о состоянии счета клиента</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center ms-auto">
+                        <a>
+                          <img src="image\more.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-auto p-0 align-self-center but_xsd">
+                        <a>
+                          <img src="image\xsd.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <hr class="hr_mess">
+                  <section class="sec3_mes_1_dop">
+                    <div class="row m-0">
+                      <div class="col-auto p-0 align-self-center id_mes_mar">
+                        <p class="p_inf mar_bot">camt.025.001.05</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center">
+                        <p class="p_inf mar_bot">Уведомление</p>
+                      </div>
+                      <div class="col-auto p-0 align-self-center ms-auto">
+                        <a>
+                          <img src="image\more.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-auto p-0 align-self-center but_xsd">
+                        <a>
+                          <img src="image\xsd.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
