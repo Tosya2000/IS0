@@ -1220,4 +1220,19 @@ a.button_main1{
 .id_mes_mar{
   margin-right: 95px;
 }
+.dop_sis{
+  background: #FFFFFF;
+  padding: 13px 14px;
+  width: 286px;
+}
+.dop_sis_mar{
+  margin: 0;
+  margin-bottom: 15px;
+}
+.btn{
+  padding: 0;
+}
+.btn body{
+  background: #D0D3D5;
+}
 /*БЛОК полный каталог END*/
