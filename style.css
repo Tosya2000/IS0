@@ -1138,6 +1138,7 @@ a.button_main1{
 /*End Новости*/
 
 /*БЛОК полный каталог START*/
+/*Блок поиска начало*/
 .find_block{
   padding: 65px 0;
   background: #666666;
@@ -1153,6 +1154,34 @@ a.button_main1{
 .h2_find_block_grey{
   color: #C4C4C4;
 }
+.find_block form {
+  position: relative;
+  min-width: 97.675px;
+  margin: 0 0 0 2.326%;
+  padding: 8px 14px 9px;
+  background: #FFFFFF;
+}
+.find_block input, .find_block button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.find_block input {
+  width: 100%;
+  padding: 8px 0 6px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #666666;
+}
+.find_block button {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: 14px;
+  padding: 0;
+  background-image: url('image/search.png');
+}
+/*Блок поиска конец*/
 .sec3_mes{
   padding: 58px 0;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
@@ -1199,7 +1228,7 @@ a.button_main1{
     height: 23px;
     background-image: url('image/expand.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto 100%;
     transition: transform 0.2s ease-in-out;
 }
 .accordion-button:not(.collapsed)::after {
@@ -1231,5 +1260,26 @@ a.button_main1{
 }
 .btn{
   padding: 0;
+}
+@media (max-width: 991px) {
+  .find_block form{
+    max-width: 100%;
+    margin: 0;
+  }
+  .find_block input{
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 767px) {
+.sec3_mes_1_dop, .sec3_mes_2, .sec3_mes_1{
+    padding: 10px 20px;
+  }
+  .col_mes_margent{
+    margin: 0;
+  }
+  .col_mes_margent_1{
+    margin: 0;
+  }
 }
 /*БЛОК полный каталог END*/
