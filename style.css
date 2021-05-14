@@ -1281,5 +1281,14 @@ a.button_main1{
   .col_mes_margent_1{
     margin: 0;
   }
+  .but_xsd
+  {
+    margin: 0;
+  }
+}
+@media (min-width: 1037px){
+  .p_mes_1{
+    margin-right: 32.75px;
+  }
 }
 /*БЛОК полный каталог END*/
