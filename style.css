@@ -1292,3 +1292,17 @@ a.button_main1{
   }
 }
 /*БЛОК полный каталог END*/
+/*Справочники*/
+.col6_direc_padding{
+  padding-left: 10px;
+  padding-right: 0;
+}
+.col5_pad{
+  padding-left: 48px;
+  padding-right: 10px;
+}
+@media (max-width: 575px) {
+  .col6_direc_padding{
+    padding: 0;
+  }
+}
