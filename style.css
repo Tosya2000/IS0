@@ -1306,3 +1306,45 @@ a.button_main1{
     padding: 0;
   }
 }
+
+.sec31_mes_gray{
+  background: rgba(208, 211, 212, 0.4);
+  padding: 19px 80px;
+  margin-top: 5px;
+}
+.sec3_mes .business{
+  margin-top: 10px;
+}
+.mar_directory{
+  margin-right: 35px;
+}
+@media (max-width: 991px) {
+  .sec31_mes_gray .col_mes_margent_1{
+    margin: 0;
+  }
+  .business .col_mes_margent_1{
+    margin: 0;
+  }
+   .business1 .but_xsd{
+    margin-left: 6px;
+  }
+}
+@media (min-width: 1400px) {
+    .business1 .but_xsd{
+      margin-left: 25px;
+    }
+  }
+@media (min-width: 1441px) {
+    .business1 .but_xsd{
+      margin-left: 41px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .sec31_mes_gray{
+        padding: 10px 20px;
+      }
+      .business1 .but_xsd{
+        margin-left: 0;
+      }
+    }
