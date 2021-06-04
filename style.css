@@ -747,7 +747,6 @@ a.button_main{
 /*В разработке END*/
 
 .contact_1{
-  min-height: 208px;
   background: #FFFFFF;
   backdrop-filter: blur(4px);
   padding: 58px 0 60px 0;
@@ -1348,3 +1347,16 @@ a.button_main1{
         margin-left: 0;
       }
     }
+.section2_our{
+  height: 403px;
+  background: url('image/our_services.jpg') no-repeat center;
+  background-size: cover;
+}
+.section3_our{
+  background: #FFFFFF;
+  padding: 58px 0;
+}
+.section4_our{
+  background: #3794D1;
+  padding: 50px 0;
+}
