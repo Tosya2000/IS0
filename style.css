@@ -1360,3 +1360,64 @@ a.button_main1{
   background: #3794D1;
   padding: 50px 0;
 }
+.col_our_service{
+  width: 300px;
+  min-height: 248px;
+  margin-top: 26px;
+  margin-right: 30px;
+  padding: 0;
+}
+.col_our_service:last-child{
+  margin-right: 0;
+  background: url('image/our_4.png') 100% 100% no-repeat;
+}
+.blok_1{
+  background: url('image/our_1.png') 100% 100% no-repeat;
+}
+.blok_2{
+  background: url('image/our_2.png') 100% 100% no-repeat;
+}
+.blok_3{
+  background: url('image/our_3.png') 100% 100% no-repeat;
+}
+.col_our{
+  background: rgba(255, 255, 255, 0.3);
+  padding: 68px 22px;
+  text-align: center;
+}
+.col_our_odd{
+  padding: 82px 22px;
+}
+@media (max-width: 1440px) {
+  .col_our_service{
+    margin-right: auto;
+  }
+}
+@media (max-width: 1361px) {
+  .col_our_service{
+    margin-right: 10px;
+  }
+  .col_our_right_t{
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1026px) {
+  .col_our_right{
+    margin-right: 0;
+  }
+  .col_our_right_t{
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .col_our_service{
+    margin-right: 0;
+  }
+  .section3_our .h2_inf{
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .section3_our .h3_inf{
+    margin-top: 25px;
+  }
+}
