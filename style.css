@@ -1291,7 +1291,8 @@ a.button_main1{
   }
 }
 /*БЛОК полный каталог END*/
-/*Справочники*/
+
+/*START Справочники*/
 .col6_direc_padding{
   padding-left: 10px;
   padding-right: 0;
@@ -1305,7 +1306,6 @@ a.button_main1{
     padding: 0;
   }
 }
-
 .sec31_mes_gray{
   background: rgba(208, 211, 212, 0.4);
   padding: 19px 80px;
@@ -1340,13 +1340,16 @@ a.button_main1{
   }
 
   @media (max-width: 767px) {
-    .sec31_mes_gray{
-        padding: 10px 20px;
-      }
-      .business1 .but_xsd{
-        margin-left: 0;
-      }
+  .sec31_mes_gray{
+      padding: 10px 20px;
     }
+    .business1 .but_xsd{
+      margin-left: 0;
+    }
+  }
+  /*END Справочники*/
+
+  /*START Наши услуги*/
 .section2_our{
   height: 403px;
   background: url('image/our_services.jpg') no-repeat center;
@@ -1419,5 +1422,54 @@ a.button_main1{
   }
   .section3_our .h3_inf{
     margin-top: 25px;
+  }
+}
+/*END Наши услуги*/
+
+/*START Репозиторий*/
+.repository_text{
+  color: black;
+  text-align: center;
+}
+.sec3_repository_header{
+  background:#b8b8b8;
+}
+.sec3_repository_dop{
+  align-items: center;
+  background:#ebebeb;
+}
+.p_inf_repository{
+  text-indent: 25px;
+}
+.table_repository{
+  font:20px Times New Roman;
+  color: black;
+  width: 100%;
+  border-collapse:collapse;
+  border-spacing:0;
+  height: auto;
+  border: 1px solid #black;
+}
+.table_repository_header{
+  font-weight:bold;
+  text-align:center;
+  border: 1px solid black;
+}
+.table_row_repository{
+  border: 1px solid black;
+}
+/*END Репозиторий*/
+
+.but_xsd_left{
+  margin-left: 41px;
+}
+@media (max-width: 575px) {
+  .but_xsd_left
+  {
+    margin: 0;
+  }
+  .mes_dir_auto .h1_developing{
+    font-size: 36px;
+    line-height: 41px;
   }
 }
