@@ -1477,6 +1477,7 @@ a.button_main_mes{
   color: #FFFFFF;
   text-decoration: none;
   user-select: none;
+  display: inline-block;
   background: #3794D1;
   outline: none;
   font-style: normal;
@@ -1485,5 +1486,4 @@ a.button_main_mes{
   line-height: 21px;
   text-align: center;
   padding: 9px 22px 10px 26px;
-  display: inline-block;
 }
