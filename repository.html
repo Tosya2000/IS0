@@ -111,7 +111,7 @@
         <div class="wrapper">
           <div class="row m-0">
             <div class="col-12 p-0">
-              <h1 class="h1_developing main_hr1_contac m-0">РЕПОЗИТОРИЙ</h1>
+              <h1 class="h1_developing main_hr1_contac h1_repositiry m-0">РЕПОЗИТОРИЙ</h1>
             </div>
           </div>
         </div>
@@ -370,7 +370,7 @@
                           <p class="p_inf mar_bot p_inf_repository">[0-9]{6} – дата формирования идентификатора в формате YYMMDD – год, месяц, день;</p>
                           <p class="p_inf mar_bot p_inf_repository">[A-Z]{4}[0-9]{3}[0-9]{2} – код бизнес-области (прописными буквами), тип и подтип сообщения без пробелов и разделителей из справочников N093, N094, N095, N096, а если сообщение не имеет подтипа, то указывается значение 00;</p>
                           <p class="p_inf mar_bot p_inf_repository">[A-Z0-9]{16} – внутренний учетный номер в бизнес-системе участника – аналог референса МТ-сообщения.</p>
-                          <p class="p_inf mar_bot p_inf_repository">Например: 7952201124PACS008031234567890ABCDEF.</p>
+                          <p class="p_inf mar_bot p_inf_repository">Например: 7952201124PACS00803<span class="d-sm-none">-<br></span>1234567890ABCDEF.</p>
                         </div>
                       </div>
                     </section>
@@ -710,52 +710,54 @@
                         <div class="col-12 col-lg-12 col-xxl-12 p-0 align-self-center m-0">
                           <p class="p_inf mar_bot p_inf_repository">Б.3.1 Состав и формат элементов данных компонента «Идентификация физического лица» (PrvtId), размещаемого в компонентах «Фактический плательщик», «Плательщик», «Бенефициар», «Фактический бенефициар», «Взыскатель», приведены в таблице. Правила указания идентификационных данных физического лица устанавливаются законодательством.</p>
                           </br>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PrvtId</td>
-                                <td class="table_row_repository">Идентификация физического лица</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PrvtId/Othr</td>
-                                <td class="table_row_repository">Уникальный идентификатор физического лица</td>
-                                <td class="table_row_repository text-center">О</br>[1..3]</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PrvtId/Othr/Id</td>
-                                <td class="table_row_repository">Идентификатор</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Max35Text</br>Согласно правилам использования</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PrvtId/Othr/SchmeNm</td>
-                                <td class="table_row_repository">Схема идентификации</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PrvtId/Othr/SchmeNm/Cd</td>
-                                <td class="table_row_repository">Код схемы идентификации</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Указываются значения:</br><strong>NIDN</strong> – идентификационный номер;</br><strong>CCPT</strong> – документ, удостоверяющий личность;</br><strong>CUST</strong> – идентификация клиента </td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PrvtId/Othr/Issr</td>
-                                <td class="table_row_repository">Издатель</td>
-                                <td class="table_row_repository text-center">У</td>
-                                <td class="table_row_repository">Max35Text</br>text{1,35}</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PrvtId</td>
+                                  <td class="table_row_repository">Идентификация физического лица</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PrvtId/Othr</td>
+                                  <td class="table_row_repository">Уникальный идентификатор физического лица</td>
+                                  <td class="table_row_repository text-center">О</br>[1..3]</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PrvtId/Othr/Id</td>
+                                  <td class="table_row_repository">Идентификатор</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Max35Text</br>Согласно правилам использования</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PrvtId/Othr/SchmeNm</td>
+                                  <td class="table_row_repository">Схема идентификации</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PrvtId/Othr/SchmeNm/Cd</td>
+                                  <td class="table_row_repository">Код схемы идентификации</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Указываются значения:</br><strong>NIDN</strong> – идентификационный номер;</br><strong>CCPT</strong> – документ, удостоверяющий личность;</br><strong>CUST</strong> – идентификация клиента </td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PrvtId/Othr/Issr</td>
+                                  <td class="table_row_repository">Издатель</td>
+                                  <td class="table_row_repository text-center">У</td>
+                                  <td class="table_row_repository">Max35Text</br>text{1,35}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Правила использования:</p>
                           <p class="p_inf mar_bot p_inf_repository">- если элемент данных «Код схемы идентификации» (PrvtId/Othr/SchmeNm/Cd) принимает значение <strong>NIDN</strong>, то в элементе данных «Идентификатор» (PrvtId/Othr/Id) указывается идентификационный номер (при идентификации резидентов Республики Беларусь идентификационный номер указывается в формате [A-Z0-9]{14}), а элемент данных «Издатель» (PrvtId/Othr/Issr) не заполняется;</p>
@@ -803,140 +805,144 @@
                           <p class="p_inf mar_bot p_inf_repository">Если банк или его филиал выступают в ролях «Фактического плательщика», «Плательщика», «Бенефициара», «Фактического бенефициара» или «Взыскателя», то их идентификация осуществляется согласно Б.2.</p>
                           <p class="p_inf mar_bot p_inf_repository">Отличия от приведенного в таблице Б.4.1 состава элементов данных компонента «Идентификация финансового института» (FinInstnId) для сообщений pacs.009 и pacs.010 изложены в документах, описывающих форматы этих сообщений.</p>
                           </br>
-                          <p>Таблица Б.4.1</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId</td>
-                                <td class="table_row_repository">Идентификация финансового института</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/BICFI</td>
-                                <td class="table_row_repository">Зарегистрированный код BIC</td>
-                                <td class="table_row_repository text-center">{Или</td>
-                                <td class="table_row_repository">Согласно А.4</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId</td>
-                                <td class="table_row_repository">Идентификация по коду, незерегистрированному в ISO</td>
-                                <td class="table_row_repository text-center">Или}</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId</td>
-                                <td class="table_row_repository">Идентификация клиринговой системы</td>
-                                <td class="table_row_repository text-center">У</td>
-                                <td class="table_row_repository">Согласно таблице Б.4.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId/Cd</td>
-                                <td class="table_row_repository">Код клиринговой системы, зарегистрированный в ISO</td>
-                                <td class="table_row_repository text-center">{Или</td>
-                                <td class="table_row_repository">[A-Z]{5}</br>Согласно справочнику Е005</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId/Prtry</td>
-                                <td class="table_row_repository">Код клиринговой системы, незарегистрированный в ISO</td>
-                                <td class="table_row_repository text-center">Или}</td>
-                                <td class="table_row_repository">[A-Z]{5}</br>Указывается значение <strong>BYNBB</strong></td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId/MmbId</td>
-                                <td class="table_row_repository">Код банка</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Max35Text</br>Согласно правилам использования</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/Nm</td>
-                                <td class="table_row_repository">Наименование банка</td>
-                                <td class="table_row_repository text-center">У</td>
-                                <td class="table_row_repository">Согласно А.2 и таблице Б.4.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/PstlAdr</td>
-                                <td class="table_row_repository">Почтовый адрес</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.5</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <p class="p_inf mar_bot p_inf_repository">Таблица Б.4.1</p>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId</td>
+                                  <td class="table_row_repository">Идентификация финансового института</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/BICFI</td>
+                                  <td class="table_row_repository">Зарегистрированный код BIC</td>
+                                  <td class="table_row_repository text-center">{Или</td>
+                                    <td class="table_row_repository">Согласно А.4</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">FinInstnId/ClrSysMmbId</td>
+                                    <td class="table_row_repository">Идентификация по коду, незерегистрированному в ISO</td>
+                                    <td class="table_row_repository text-center">Или}</td>
+                                    <td class="table_row_repository">-</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId</td>
+                                    <td class="table_row_repository">Идентификация клиринговой системы</td>
+                                    <td class="table_row_repository text-center">У</td>
+                                    <td class="table_row_repository">Согласно таблице Б.4.2</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId/Cd</td>
+                                    <td class="table_row_repository">Код клиринговой системы, зарегистрированный в ISO</td>
+                                    <td class="table_row_repository text-center">{Или</td>
+                                      <td class="table_row_repository">[A-Z]{5}</br>Согласно справочнику Е005</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId/Prtry</td>
+                                      <td class="table_row_repository">Код клиринговой системы, незарегистрированный в ISO</td>
+                                      <td class="table_row_repository text-center">Или}</td>
+                                      <td class="table_row_repository">[A-Z]{5}</br>Указывается значение <strong>BYNBB</strong></td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">FinInstnId/ClrSysMmbId/MmbId</td>
+                                      <td class="table_row_repository">Код банка</td>
+                                      <td class="table_row_repository text-center">О</td>
+                                      <td class="table_row_repository">Max35Text</br>Согласно правилам использования</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">FinInstnId/Nm</td>
+                                      <td class="table_row_repository">Наименование банка</td>
+                                      <td class="table_row_repository text-center">У</td>
+                                      <td class="table_row_repository">Согласно А.2 и таблице Б.4.2</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">FinInstnId/PstlAdr</td>
+                                      <td class="table_row_repository">Почтовый адрес</td>
+                                      <td class="table_row_repository text-center">Н</td>
+                                      <td class="table_row_repository">Согласно Б.5</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
                           </br>
-                          <p>Таблица Б.4.2</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <tr class="table_repository_header">
-                                <td rowspan="2" class="table_row_repository">XML-тег</td>
-                                <td rowspan="2" class="table_row_repository">Банк имеет зарегистрированный BIC</td>
-                                <td colspan="2" class="table_row_repository">Банк не имеет зарегистрированного BIC</td>
-                              </tr>
-                              <tr class="table_repository_header">
-                                <td class="table_row_repository">Банк участник BISS</td>
-                                <td class="table_row_repository">Банк не участник BISS</td>
-                              </tr>
-                              <tr class="table_row_repository text-center">
-                                <td colspan="4" class="table_row_repository">Общая часть сообщения</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/BICFI</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository text-center">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId/Prtry</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository text-center">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId/MmbId</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository text-center">-</td>
-                              </tr>
-                              <tr class="table_row_repository text-center">
-                                <td colspan="4" class="table_row_repository">Основная часть сообщения</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/BICFI</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository text-center">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository text-center">Н</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/ClrSysMmbId/MmbId</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository text-center">О</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/Nm</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository text-center">О</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">FinInstnId/PstlAdr</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository text-center">Н</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <p class="p_inf mar_bot p_inf_repository">Таблица Б.4.2</p>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <tr class="table_repository_header">
+                                  <td rowspan="2" class="table_row_repository">XML-тег</td>
+                                  <td rowspan="2" class="table_row_repository">Банк имеет зарегистрированный BIC</td>
+                                  <td colspan="2" class="table_row_repository">Банк не имеет зарегистрированного BIC</td>
+                                </tr>
+                                <tr class="table_repository_header">
+                                  <td class="table_row_repository">Банк участник BISS</td>
+                                  <td class="table_row_repository">Банк не участник BISS</td>
+                                </tr>
+                                <tr class="table_row_repository text-center">
+                                  <td colspan="4" class="table_row_repository">Общая часть сообщения</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/BICFI</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId/Prtry</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/ClrSysMmbId/MmbId</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                </tr>
+                                <tr class="table_row_repository text-center">
+                                  <td colspan="4" class="table_row_repository">Основная часть сообщения</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/BICFI</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/ClrSysMmbId/ClrSysId</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/ClrSysMmbId/MmbId</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/Nm</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">FinInstnId/PstlAdr</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Правила использования:</p>
                           <p class="p_inf mar_bot p_inf_repository">- если в элементе данных «Код клиринговой системы, незарегистрированный в ISO» (FinInstnId/ClrSysMmbId/ClrSysId/Prtry) указано значение <strong>BYNBB</strong>, то элемент данных «Код банка» (FinInstnId/ClrSysMmbId/MmbId) указывается в формате, описанном в пункте А.4 настоящего документа, и заполняется значением из справочника N029;</p>
@@ -945,41 +951,43 @@
                           <p class="p_inf mar_bot p_inf_repository">Б.4.2 Состав и формат элементов данных компонента «Идентификация филиала банка» (BrnchId) приведены в таблице Б.4.3.</p>
                           <p class="p_inf mar_bot p_inf_repository">Компонент «Идентификация филиала банка» для банков резидентов Республики Беларусь не используется.</p>
                           </br>
-                          <p>Таблица Б.4.3</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">BrnchId</td>
-                                <td class="table_row_repository">Идентификационные данные филиала банка</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">BrnchId/Id</td>
-                                <td class="table_row_repository">Код филиала банка</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Max35Text</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">BrnchId/Nm</td>
-                                <td class="table_row_repository">Наименование филиала банка</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">BrnchId/PstlAdr</td>
-                                <td class="table_row_repository">Почтовый адрес места нахождения филиала банка</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.5</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <p class="p_inf mar_bot p_inf_repository">Таблица Б.4.3</p>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">BrnchId</td>
+                                  <td class="table_row_repository">Идентификационные данные филиала банка</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">BrnchId/Id</td>
+                                  <td class="table_row_repository">Код филиала банка</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Max35Text</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">BrnchId/Nm</td>
+                                  <td class="table_row_repository">Наименование филиала банка</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.2</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">BrnchId/PstlAdr</td>
+                                  <td class="table_row_repository">Почтовый адрес места нахождения филиала банка</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно Б.5</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Б.4.3 Пример заполнения компонента «Идентификация финансового института» в формате XML для финансового института, имеющего зарегистрированный BIC:</p>
                           Как вставить хмл сюда?
@@ -1020,82 +1028,84 @@
                           <p class="p_inf mar_bot p_inf_repository">Б.5.1 Состав и формат элементов данных компонента «Адрес» (PstlAdr), размещаемого в компонентах, идентифицирующих участников банковского перевода, приведены в таблице Б.5.</p>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Таблица Б.5</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr</td>
-                                <td class="table_row_repository">Адрес</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/StrtNm</td>
-                                <td class="table_row_repository">Наименование улицы или проспекта</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max70Text</br>text{1,70}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/BldgNb</td>
-                                <td class="table_row_repository">Номер здания (в том числе корпуса, строения и т.п.)</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max16Text</br>text{1,16}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/Room</td>
-                                <td class="table_row_repository">Номер квартиры или офиса в здании</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max70Text</br>text{1,70}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/PstCd</td>
-                                <td class="table_row_repository">Почтовый индекс</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max16Text</br>text{1,16}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/TwnNm</td>
-                                <td class="table_row_repository">Наименование населенного пункта</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max35Text</br>text{1,35}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/TwnLctnNm</td>
-                                <td class="table_row_repository">Конкретное наименование местности (код СОАТО из справочника N058)</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max35Text</br>[0-9]{10}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/DstrctNm</td>
-                                <td class="table_row_repository">Наименование административной единицы, например: район, сельсовет, провинция</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max35Text</br>text{1,35}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/CtrySubDvsn</td>
-                                <td class="table_row_repository">Наименование региона страны, например: область, край, штат</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max35Text</br>text{1,35}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/Ctry</td>
-                                <td class="table_row_repository">Код страны</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.8</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">PstlAdr/AdrLine</td>
-                                <td class="table_row_repository">Информация, описывающая адрес в свободной текстовой форме</td>
-                                <td class="table_row_repository text-center">Н</br>[0..3]</td>
-                                <td class="table_row_repository">Max70Text</br>text{1,70}</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr</td>
+                                  <td class="table_row_repository">Адрес</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/StrtNm</td>
+                                  <td class="table_row_repository">Наименование улицы или проспекта</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max70Text</br>text{1,70}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/BldgNb</td>
+                                  <td class="table_row_repository">Номер здания (в том числе корпуса, строения и т.п.)</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max16Text</br>text{1,16}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/Room</td>
+                                  <td class="table_row_repository">Номер квартиры или офиса в здании</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max70Text</br>text{1,70}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/PstCd</td>
+                                  <td class="table_row_repository">Почтовый индекс</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max16Text</br>text{1,16}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/TwnNm</td>
+                                  <td class="table_row_repository">Наименование населенного пункта</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max35Text</br>text{1,35}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/TwnLctnNm</td>
+                                  <td class="table_row_repository">Конкретное наименование местности (код СОАТО из справочника N058)</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max35Text</br>[0-9]{10}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/DstrctNm</td>
+                                  <td class="table_row_repository">Наименование административной единицы, например: район, сельсовет, провинция</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max35Text</br>text{1,35}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/CtrySubDvsn</td>
+                                  <td class="table_row_repository">Наименование региона страны, например: область, край, штат</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max35Text</br>text{1,35}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/Ctry</td>
+                                  <td class="table_row_repository">Код страны</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.8</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">PstlAdr/AdrLine</td>
+                                  <td class="table_row_repository">Информация, описывающая адрес в свободной текстовой форме</td>
+                                  <td class="table_row_repository text-center">Н</br>[0..3]</td>
+                                  <td class="table_row_repository">Max70Text</br>text{1,70}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Правила использования:</p>
                           <p class="p_inf mar_bot p_inf_repository">- элемент данных «Наименование улицы или проспекта» (PstlAdr/StrtNm) при указании адресов, находящихся на территории Республики Беларусь, заполняется согласно Реестру наименований улиц и дорог Национального кадастрового агентства Республики Беларусь с указанием типа элемента улично-дорожной сети перед его названием через пробел;</p>
@@ -1141,52 +1151,54 @@
                           <p class="p_inf mar_bot p_inf_repository">Б.6.1 Состав и формат элементов данных компонента «Контактные данные» (CtctDtls), позволяющего осуществлять информационное взаимодействие с участником банковского перевода, приведены в таблице Б.6.</p>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Таблица Б.6</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">CtctDtls</td>
-                                <td class="table_row_repository">Информация для организации взаимодействия с участником перевода денежных средств</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">CtctDtls/Nm</td>
-                                <td class="table_row_repository">Имя</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Max140Text</br>text{1,140}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">CtctDtls/PhneNb</td>
-                                <td class="table_row_repository">Номер стационарного телефона</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">PhoneNumber</br>\+[0-9]{1,3}-[0-9()+\-]{1,30}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">CtctDtls/MobNb</td>
-                                <td class="table_row_repository">Номер мобильного телефона</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">PhoneNumber</br>\+[0-9]{1,3}-[0-9()+\-]{1,30}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">CtctDtls/FaxNb</td>
-                                <td class="table_row_repository">Номер факса</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">PhoneNumber</br>\+[0-9]{1,3}-[0-9()+\-]{1,30}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">CtctDtls/EmailAdr</td>
-                                <td class="table_row_repository">Адрес электронной почты</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max140Text</br>text{1,140}</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">CtctDtls</td>
+                                  <td class="table_row_repository">Информация для организации взаимодействия с участником перевода денежных средств</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">CtctDtls/Nm</td>
+                                  <td class="table_row_repository">Имя</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Max140Text</br>text{1,140}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">CtctDtls/PhneNb</td>
+                                  <td class="table_row_repository">Номер стационарного телефона</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">PhoneNumber</br>\+[0-9]{1,3}-[0-9()+\-]{1,30}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">CtctDtls/MobNb</td>
+                                  <td class="table_row_repository">Номер мобильного телефона</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">PhoneNumber</br>\+[0-9]{1,3}-[0-9()+\-]{1,30}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">CtctDtls/FaxNb</td>
+                                  <td class="table_row_repository">Номер факса</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">PhoneNumber</br>\+[0-9]{1,3}-[0-9()+\-]{1,30}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">CtctDtls/EmailAdr</td>
+                                  <td class="table_row_repository">Адрес электронной почты</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max140Text</br>text{1,140}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Правила использования:</p>
                           <p class="p_inf mar_bot p_inf_repository">- в элементе данных «Имя» (CtctDtls/Nm) при необходимости может быть указано имя (наименование) участника на иностранном языке;</p>
@@ -1228,142 +1240,144 @@
                           <p class="p_inf mar_bot p_inf_repository">Б.7.1 Компонент «Информация о переводе» (RmtInf) содержит элементы данных, позволяющие однозначно идентифицировать документы, служащие основанием для перевода денежных средств, а также требуемую законодательством дополнительную информацию в зависимости от назначения перевода. Состав и формат элементов данных компонента «Информация о переводе» приведены в таблице Б.7.</p>
                           <br>
                           <p class="p_inf mar_bot p_inf_repository">Таблица Б.7</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf</td>
-                                <td class="table_row_repository">Информация о переводе</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Ustrd</td>
-                                <td class="table_row_repository">Назначение перевода в неструктурированном формате</td>
-                                <td class="table_row_repository text-center">{Или</br>[1..3]</td>
-                                <td class="table_row_repository">Max140Text</br>text{1,140}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd</td>
-                                <td class="table_row_repository">Детали транзакции в структурированном формате</td>
-                                <td class="table_row_repository text-center">Или}</br>[1..5]</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/RfrdDocInf</td>
-                                <td class="table_row_repository">Идентификация ссылочного документа (счет, акт, договор и тп.)</td>
-                                <td class="table_row_repository text-center">Н</br>[0..5]</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/Tp</td>
-                                <td class="table_row_repository">Тип ссылочного документа в кодированной форме</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/Tp/CdOrPrtry</td>
-                                <td class="table_row_repository">Выбор типа ссылочного документа</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/Tp/CdOrPrtry/Prtry</td>
-                                <td class="table_row_repository">Код типа ссылочного документа</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">[A-Z0-9]{4}</br>Согласно правилам использования</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/Nb</td>
-                                <td class="table_row_repository">Номер ссылочного документа</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Max35Text</br>Согласно правилам использования</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/RltdDt</td>
-                                <td class="table_row_repository">Дата ссылочного документа</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.7</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/RfrdDocAmt</td>
-                                <td class="table_row_repository">Сумма ссылочного документа</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.5</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr</td>
-                                <td class="table_row_repository">Взыскатель</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr/Nm</td>
-                                <td class="table_row_repository">Наименование</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr/PstlAdr</td>
-                                <td class="table_row_repository">Почтовый адрес</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.5</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr/Id</td>
-                                <td class="table_row_repository">Идентификация</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr/Id/OrgId</td>
-                                <td class="table_row_repository">Идентификация организации</td>
-                                <td class="table_row_repository text-center">{Или</td>
-                                <td class="table_row_repository">Согласно Б.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr/Id/PrvtId</td>
-                                <td class="table_row_repository">Идентификация физического лица</td>
-                                <td class="table_row_repository text-center">Или}</td>
-                                <td class="table_row_repository">Согласно Б.3</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr/CtryOfRes</td>
-                                <td class="table_row_repository">Страна регистрации</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.8</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr/CtctDtls</td>
-                                <td class="table_row_repository">Контактные данные</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.6</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/TaxRmt</td>
-                                <td class="table_row_repository">Информация о налогах и сборах</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.8</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/GrnshmtRmt</td>
-                                <td class="table_row_repository">Информация о документе, являющемся основанием для взыскания</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.11</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/AddtlRmtInf</td>
-                                <td class="table_row_repository">Дополнительная информация в свободном формате</td>
-                                <td class="table_row_repository text-center">Н</br>[0..3]</td>
-                                <td class="table_row_repository">Max140Text</br>text{1,140}</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RmtInf</td>
+                                  <td class="table_row_repository">Информация о переводе</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RmtInf/Ustrd</td>
+                                  <td class="table_row_repository">Назначение перевода в неструктурированном формате</td>
+                                  <td class="table_row_repository text-center">{Или</br>[1..3]</td>
+                                    <td class="table_row_repository">Max140Text</br>text{1,140}</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd</td>
+                                    <td class="table_row_repository">Детали транзакции в структурированном формате</td>
+                                    <td class="table_row_repository text-center">Или}</br>[1..5]</td>
+                                    <td class="table_row_repository">-</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/RfrdDocInf</td>
+                                    <td class="table_row_repository">Идентификация ссылочного документа (счет, акт, договор и тп.)</td>
+                                    <td class="table_row_repository text-center">Н</br>[0..5]</td>
+                                    <td class="table_row_repository">-</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/Tp</td>
+                                    <td class="table_row_repository">Тип ссылочного документа в кодированной форме</td>
+                                    <td class="table_row_repository text-center">Н</td>
+                                    <td class="table_row_repository">-</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/Tp/CdOrPrtry</td>
+                                    <td class="table_row_repository">Выбор типа ссылочного документа</td>
+                                    <td class="table_row_repository text-center">О</td>
+                                    <td class="table_row_repository">-</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/Tp/CdOrPrtry/Prtry</td>
+                                    <td class="table_row_repository">Код типа ссылочного документа</td>
+                                    <td class="table_row_repository text-center">О</td>
+                                    <td class="table_row_repository">[A-Z0-9]{4}</br>Согласно правилам использования</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/Nb</td>
+                                    <td class="table_row_repository">Номер ссылочного документа</td>
+                                    <td class="table_row_repository text-center">О</td>
+                                    <td class="table_row_repository">Max35Text</br>Согласно правилам использования</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/RfrdDocInf/RltdDt</td>
+                                    <td class="table_row_repository">Дата ссылочного документа</td>
+                                    <td class="table_row_repository text-center">О</td>
+                                    <td class="table_row_repository">Согласно А.7</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/RfrdDocAmt</td>
+                                    <td class="table_row_repository">Сумма ссылочного документа</td>
+                                    <td class="table_row_repository text-center">Н</td>
+                                    <td class="table_row_repository">Согласно А.5</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/Invcr</td>
+                                    <td class="table_row_repository">Взыскатель</td>
+                                    <td class="table_row_repository text-center">Н</td>
+                                    <td class="table_row_repository">-</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/Invcr/Nm</td>
+                                    <td class="table_row_repository">Наименование</td>
+                                    <td class="table_row_repository text-center">О</td>
+                                    <td class="table_row_repository">Согласно А.2</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/Invcr/PstlAdr</td>
+                                    <td class="table_row_repository">Почтовый адрес</td>
+                                    <td class="table_row_repository text-center">Н</td>
+                                    <td class="table_row_repository">Согласно Б.5</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/Invcr/Id</td>
+                                    <td class="table_row_repository">Идентификация</td>
+                                    <td class="table_row_repository text-center">О</td>
+                                    <td class="table_row_repository">-</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">RmtInf/Strd/Invcr/Id/OrgId</td>
+                                    <td class="table_row_repository">Идентификация организации</td>
+                                    <td class="table_row_repository text-center">{Или</td>
+                                      <td class="table_row_repository">Согласно Б.2</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">RmtInf/Strd/Invcr/Id/PrvtId</td>
+                                      <td class="table_row_repository">Идентификация физического лица</td>
+                                      <td class="table_row_repository text-center">Или}</td>
+                                      <td class="table_row_repository">Согласно Б.3</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">RmtInf/Strd/Invcr/CtryOfRes</td>
+                                      <td class="table_row_repository">Страна регистрации</td>
+                                      <td class="table_row_repository text-center">Н</td>
+                                      <td class="table_row_repository">Согласно А.8</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">RmtInf/Strd/Invcr/CtctDtls</td>
+                                      <td class="table_row_repository">Контактные данные</td>
+                                      <td class="table_row_repository text-center">Н</td>
+                                      <td class="table_row_repository">Согласно Б.6</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">RmtInf/Strd/TaxRmt</td>
+                                      <td class="table_row_repository">Информация о налогах и сборах</td>
+                                      <td class="table_row_repository text-center">Н</td>
+                                      <td class="table_row_repository">Согласно Б.8</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">RmtInf/Strd/GrnshmtRmt</td>
+                                      <td class="table_row_repository">Информация о документе, являющемся основанием для взыскания</td>
+                                      <td class="table_row_repository text-center">Н</td>
+                                      <td class="table_row_repository">Согласно Б.11</td>
+                                    </tr>
+                                    <tr class="table_row_repository">
+                                      <td class="table_row_repository">RmtInf/Strd/AddtlRmtInf</td>
+                                      <td class="table_row_repository">Дополнительная информация в свободном формате</td>
+                                      <td class="table_row_repository text-center">Н</br>[0..3]</td>
+                                      <td class="table_row_repository">Max140Text</br>text{1,140}</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
                           <br>
                           <p class="p_inf mar_bot p_inf_repository">Правила использования:</p>
                           <p class="p_inf mar_bot p_inf_repository">- элемент данных «Код типа ссылочного документа» (RmtInf/Strd/RfrdDocInf/Tp/CdOrPrtry/Prtry) при указании информации о законодательном акте заполняется согласно справочнику N080, при указании типов иных ссылочных документов – согласно справочнику N101;</p>
@@ -1407,166 +1421,168 @@
                           <p class="p_inf mar_bot p_inf_repository">Б.8.1 Компонент «Информация о налогах и сборах» (TaxRmt) содержит элементы данных, позволяющие однозначно идентифицировать налоги и сборы, их ставки, облагаемые суммы и сумму, подлежащую оплате. Компонент «Информация о налогах и сборах» входит в состав компонента «Информация о переводе». Состав и формат элементов данных компонента «Информация о налогах и сборах» приведены в таблице Б.8.</p>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Таблица Б.8</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt</td>
-                                <td class="table_row_repository">Информация о налогах и сборах</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Cdtr</td>
-                                <td class="table_row_repository">Бенефициар</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Cdtr/TaxId</td>
-                                <td class="table_row_repository">УНП бенефициара</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.9</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Dbtr</td>
-                                <td class="table_row_repository">Плательщик налогов и сборов</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Dbtr/TaxId</td>
-                                <td class="table_row_repository">УНП плательщика налогов и сборов</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.9</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/UltmtDbtr</td>
-                                <td class="table_row_repository">Фактический плательщик налогов и сборов (третье лицо)</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/UltmtDbtr/TaxId</td>
-                                <td class="table_row_repository">УНП фактического плательщика налогов и сборов</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.9</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/UltmtDbtr/Authstn</td>
-                                <td class="table_row_repository">Авторизация</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/UltmtDbtr/Authstn/Nm</td>
-                                <td class="table_row_repository">Наименование фактического плательщика налогов и сборов</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/RefNb</td>
-                                <td class="table_row_repository">Дополнительный регистрационный номер</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max35Text</br>text{1,35}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Dt</td>
-                                <td class="table_row_repository">Дата, на которую налог должен быть уплачен</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.7</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd</td>
-                                <td class="table_row_repository">Учетные данные налога</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RmtInf/Strd/Invcr/PstlAdr</td>
-                                <td class="table_row_repository">Почтовый адрес</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.5</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/Ctgy</td>
-                                <td class="table_row_repository">Код налога или сбора, опубликованный налоговым органом</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">[0-9]{5}</br>Согласно правилам использования</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/Prd</td>
-                                <td class="table_row_repository">Период уплаты налога или сбора</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/Prd/Yr</td>
-                                <td class="table_row_repository">Год уплаты налога</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.7</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/Prd/Tp</td>
-                                <td class="table_row_repository">Период</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">[A-Z0-9]{4}</br>Согласно справочнику N102</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/Prd/FrToDt</td>
-                                <td class="table_row_repository">Даты начала и окончания периода, за который уплачивается налог</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/Prd/FrToDt/FrDt</td>
-                                <td class="table_row_repository">Дата начала периода</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.7</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/Prd/FrToDt/ToDt</td>
-                                <td class="table_row_repository">Дата окончания периода</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.7</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/TaxAmt</td>
-                                <td class="table_row_repository">Информация о сумме налога или сбора</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/TaxAmt/Rate</td>
-                                <td class="table_row_repository">Ставка налога или сбора в процентах</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.5</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/TaxAmt/TaxblBaseAmt</td>
-                                <td class="table_row_repository">Сумма и валюта, с которой удерживается налог или сбор</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.5</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/TaxAmt/TtlAmt</td>
-                                <td class="table_row_repository">Сумма и валюта налога или сбора</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.5</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">TaxRmt/Rcrd/AddtlInf</td>
-                                <td class="table_row_repository">Дополнительная информация о налогах и сборах в свободном формате</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max140Text</br>text{1,140}</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt</td>
+                                  <td class="table_row_repository">Информация о налогах и сборах</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Cdtr</td>
+                                  <td class="table_row_repository">Бенефициар</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Cdtr/TaxId</td>
+                                  <td class="table_row_repository">УНП бенефициара</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.9</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Dbtr</td>
+                                  <td class="table_row_repository">Плательщик налогов и сборов</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Dbtr/TaxId</td>
+                                  <td class="table_row_repository">УНП плательщика налогов и сборов</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.9</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/UltmtDbtr</td>
+                                  <td class="table_row_repository">Фактический плательщик налогов и сборов (третье лицо)</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/UltmtDbtr/TaxId</td>
+                                  <td class="table_row_repository">УНП фактического плательщика налогов и сборов</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.9</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/UltmtDbtr/Authstn</td>
+                                  <td class="table_row_repository">Авторизация</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/UltmtDbtr/Authstn/Nm</td>
+                                  <td class="table_row_repository">Наименование фактического плательщика налогов и сборов</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.2</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/RefNb</td>
+                                  <td class="table_row_repository">Дополнительный регистрационный номер</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max35Text</br>text{1,35}</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Dt</td>
+                                  <td class="table_row_repository">Дата, на которую налог должен быть уплачен</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.7</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd</td>
+                                  <td class="table_row_repository">Учетные данные налога</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RmtInf/Strd/Invcr/PstlAdr</td>
+                                  <td class="table_row_repository">Почтовый адрес</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно Б.5</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/Ctgy</td>
+                                  <td class="table_row_repository">Код налога или сбора, опубликованный налоговым органом</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">[0-9]{5}</br>Согласно правилам использования</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/Prd</td>
+                                  <td class="table_row_repository">Период уплаты налога или сбора</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/Prd/Yr</td>
+                                  <td class="table_row_repository">Год уплаты налога</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.7</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/Prd/Tp</td>
+                                  <td class="table_row_repository">Период</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">[A-Z0-9]{4}</br>Согласно справочнику N102</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/Prd/FrToDt</td>
+                                  <td class="table_row_repository">Даты начала и окончания периода, за который уплачивается налог</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/Prd/FrToDt/FrDt</td>
+                                  <td class="table_row_repository">Дата начала периода</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.7</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/Prd/FrToDt/ToDt</td>
+                                  <td class="table_row_repository">Дата окончания периода</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.7</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/TaxAmt</td>
+                                  <td class="table_row_repository">Информация о сумме налога или сбора</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/TaxAmt/Rate</td>
+                                  <td class="table_row_repository">Ставка налога или сбора в процентах</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.5</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/TaxAmt/TaxblBaseAmt</td>
+                                  <td class="table_row_repository">Сумма и валюта, с которой удерживается налог или сбор</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.5</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/TaxAmt/TtlAmt</td>
+                                  <td class="table_row_repository">Сумма и валюта налога или сбора</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.5</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">TaxRmt/Rcrd/AddtlInf</td>
+                                  <td class="table_row_repository">Дополнительная информация о налогах и сборах в свободном формате</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max140Text</br>text{1,140}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Правила использования:</p>
                           <p class="p_inf mar_bot p_inf_repository">- в первой позиции элемента данных «Код налога или сбора, опубликованный налоговым органом» (TaxRmt/Rcrd/Ctgy) указывается код вида платежа из справочника N085, во второй-пятой позициях – коды платежей в бюджет согласно справочнику N011.</p>
@@ -1607,52 +1623,54 @@
                           <p class="p_inf mar_bot p_inf_repository">Компонент «Номер счета» (Acct, DbtrAcct, CdtrAcct, IntrmyAgt1Acct и аналогичные) должен содержать элементы данных, позволяющие однозначно идентифицировать номер и валюту (при необходимости) счета участника перевода денежных средств. Состав и формат элементов данных компонента «Номер счета» приведен в таблице Б.9.</p>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Таблица Б.9</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">Acct</td>
-                                <td class="table_row_repository">Номер счета</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">Acct/Id</td>
-                                <td class="table_row_repository">Идентификатор номера счета</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">Acct/Id/IBAN</td>
-                                <td class="table_row_repository">Номер счета в формате IBAN</td>
-                                <td class="table_row_repository text-center">{Или</td>
-                                <td class="table_row_repository">Согласно А.3</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">Acct/Id/Othr</td>
-                                <td class="table_row_repository">Номер счета в ином формате</td>
-                                <td class="table_row_repository text-center">Или}</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">Acct/Id/Othr/Id</td>
-                                <td class="table_row_repository">Идентификатор номера счета в ином формате</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Max34Text</br>[A-Z0-9]{1,34}</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">Acct/Ccy</td>
-                                <td class="table_row_repository">Валюта счета</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.5</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">Acct</td>
+                                  <td class="table_row_repository">Номер счета</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">Acct/Id</td>
+                                  <td class="table_row_repository">Идентификатор номера счета</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">Acct/Id/IBAN</td>
+                                  <td class="table_row_repository">Номер счета в формате IBAN</td>
+                                  <td class="table_row_repository text-center">{Или</td>
+                                    <td class="table_row_repository">Согласно А.3</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">Acct/Id/Othr</td>
+                                    <td class="table_row_repository">Номер счета в ином формате</td>
+                                    <td class="table_row_repository text-center">Или}</td>
+                                    <td class="table_row_repository">-</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">Acct/Id/Othr/Id</td>
+                                    <td class="table_row_repository">Идентификатор номера счета в ином формате</td>
+                                    <td class="table_row_repository text-center">О</td>
+                                    <td class="table_row_repository">Max34Text</br>[A-Z0-9]{1,34}</td>
+                                  </tr>
+                                  <tr class="table_row_repository">
+                                    <td class="table_row_repository">Acct/Ccy</td>
+                                    <td class="table_row_repository">Валюта счета</td>
+                                    <td class="table_row_repository text-center">Н</td>
+                                    <td class="table_row_repository">Согласно А.5</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                          </div>
                           </br>
                         </div>
                       </div>
@@ -1688,88 +1706,90 @@
                           <p class="p_inf mar_bot p_inf_repository">Компонент «Отчетность регулятору» (RgltryRptg) должен содержать элементы данных, позволяющие сформировать информацию о переводе денежных средств для представления контролирующим органам в соответствии с законодательством. Этот компонент предназначен для указания регистрационного номера сделки, регистрационного номера административного правонарушения и иной информации, требуемой контролирующими органами. Состав и формат элементов данных компонента «Отчетность регулятору» приведен в таблице Б.10.</p>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Таблица Б.10</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg</td>
-                                <td class="table_row_repository">Отчетность регулятору</td>
-                                <td class="table_row_repository text-center">[0..10]</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/DbtCdtRptgInd</td>
-                                <td class="table_row_repository">Определяет сторону транзакции, к которой относится отчетность: к бенефициару (CRED), плательщику (DEBT) или к обеим сторонам (BOTH)</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Указываются значения: <strong>CRED</strong>, <strong>DEBT</strong> или <strong>BOTH</strong></td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Authrty</td>
-                                <td class="table_row_repository">Контролирующий орган, которому предоставляется отчетность</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Authrty/Nm</td>
-                                <td class="table_row_repository">Наименование контролирующего органа</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Authrty/Ctry</td>
-                                <td class="table_row_repository">Страна нахождения контролирующего органа в закодированной форме</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.8</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Dtls</td>
-                                <td class="table_row_repository">Описание представляемой информации</td>
-                                <td class="table_row_repository text-center">Н</br>[0..10]</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Dtls/Tp</td>
-                                <td class="table_row_repository">Тип информации</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Max35Text</br>Согласно правилам использования</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Dtls/Dt</td>
-                                <td class="table_row_repository">Дата, связанная с установленным типом информации отчетности регулятору</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.7</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Dtls/Ctry</td>
-                                <td class="table_row_repository">Страна, связанная с установленным типом информации</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.8</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Dtls/Cd</td>
-                                <td class="table_row_repository">Характер, назначение и причина транзакции в соответствии с нормативными и законодательными требованиями в закодированной форме</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Max10Text</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Dtls/Amt</td>
-                                <td class="table_row_repository">Сумма денежных средств</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.5</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">RgltryRptg/Dtls/Inf</td>
-                                <td class="table_row_repository">Дополнительная информация</td>
-                                <td class="table_row_repository text-center">Н</br>[0..3]</td>
-                                <td class="table_row_repository">Max35Text</br>text{1,35}</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg</td>
+                                  <td class="table_row_repository">Отчетность регулятору</td>
+                                  <td class="table_row_repository text-center">[0..10]</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/DbtCdtRptgInd</td>
+                                  <td class="table_row_repository">Определяет сторону транзакции, к которой относится отчетность: к бенефициару (CRED), плательщику (DEBT) или к обеим сторонам (BOTH)</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Указываются значения: <strong>CRED</strong>, <strong>DEBT</strong> или <strong>BOTH</strong></td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Authrty</td>
+                                  <td class="table_row_repository">Контролирующий орган, которому предоставляется отчетность</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Authrty/Nm</td>
+                                  <td class="table_row_repository">Наименование контролирующего органа</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.2</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Authrty/Ctry</td>
+                                  <td class="table_row_repository">Страна нахождения контролирующего органа в закодированной форме</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.8</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Dtls</td>
+                                  <td class="table_row_repository">Описание представляемой информации</td>
+                                  <td class="table_row_repository text-center">Н</br>[0..10]</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Dtls/Tp</td>
+                                  <td class="table_row_repository">Тип информации</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Max35Text</br>Согласно правилам использования</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Dtls/Dt</td>
+                                  <td class="table_row_repository">Дата, связанная с установленным типом информации отчетности регулятору</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.7</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Dtls/Ctry</td>
+                                  <td class="table_row_repository">Страна, связанная с установленным типом информации</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.8</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Dtls/Cd</td>
+                                  <td class="table_row_repository">Характер, назначение и причина транзакции в соответствии с нормативными и законодательными требованиями в закодированной форме</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Max10Text</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Dtls/Amt</td>
+                                  <td class="table_row_repository">Сумма денежных средств</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.5</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">RgltryRptg/Dtls/Inf</td>
+                                  <td class="table_row_repository">Дополнительная информация</td>
+                                  <td class="table_row_repository text-center">Н</br>[0..3]</td>
+                                  <td class="table_row_repository">Max35Text</br>text{1,35}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Правила использования:</p>
                           <p class="p_inf mar_bot p_inf_repository">- регистрационный номер сделки (валютного договора) указывается при необходимости в элементе данных «Тип информации» (RgltryRptg/Dtls/Tp) в формате RN[0-9]{6}/[0-9]{6}/[0-9]{5}.([0-9]{4})?, где:</p>
@@ -1816,94 +1836,96 @@
                           <p class="p_inf mar_bot p_inf_repository">Компонент «Информация о документе, являющемся основанием для взыскания» (GrnshmtRmt) должен содержать элементы данных, однозначно идентифицирующие документ, являющийся основанием для взыскания. Состав и формат элементов данных компонента «Информация о документе, являющемся основанием для взыскания» приведен в таблице Б.11.</p>
                           </br>
                           <p class="p_inf mar_bot p_inf_repository">Таблица Б.11</p>
-                          <table class="table_repository">
-                            <tbody>
-                              <thead  class="table_repository_header">
-                                <td class="table_row_repository">XML-тег</td>
-                                <td class="table_row_repository">Описание</td>
-                                <td class="table_row_repository">Применяемость</td>
-                                <td class="table_row_repository">Тип данных и формат</td>
-                              </thead>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt</td>
-                                <td class="table_row_repository">Информация о документе, являющемся основанием для взыскания</td>
-                                <td class="table_row_repository text-center">-</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/Tp</td>
-                                <td class="table_row_repository">Тип документа</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/Tp/CdOrPrtry</td>
-                                <td class="table_row_repository">Код или в собственном формате</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/Tp/CdOrPrtry/Prtry</td>
-                                <td class="table_row_repository">Код в собственном формате</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">[0-9]{2}</br>Согласно справочнику N049</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr</td>
-                                <td class="table_row_repository">Информация об уполномоченном органе, принявшем документ</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/Nm</td>
-                                <td class="table_row_repository">Наименование</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/PstlAdr</td>
-                                <td class="table_row_repository">Почтовый адрес</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.5</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/Id</td>
-                                <td class="table_row_repository">Идентификация</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">-</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/Id/OrgId</td>
-                                <td class="table_row_repository">Идентификация организации</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно Б.2</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/CtctDtls</td>
-                                <td class="table_row_repository">Контактные данные</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно Б.6</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/RefNb</td>
-                                <td class="table_row_repository">Номер документа</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Max140Text</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/Dt</td>
-                                <td class="table_row_repository">Дата документа</td>
-                                <td class="table_row_repository text-center">О</td>
-                                <td class="table_row_repository">Согласно А.7</td>
-                              </tr>
-                              <tr class="table_row_repository">
-                                <td class="table_row_repository">GrnshmtRmt/RmtdAmt</td>
-                                <td class="table_row_repository">Сумма, указанная в документе</td>
-                                <td class="table_row_repository text-center">Н</td>
-                                <td class="table_row_repository">Согласно А.5</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="table-responsive">
+                            <table class="table_repository">
+                              <tbody>
+                                <thead  class="table_repository_header">
+                                  <td class="table_row_repository">XML-тег</td>
+                                  <td class="table_row_repository">Описание</td>
+                                  <td class="table_row_repository">Применяемость</td>
+                                  <td class="table_row_repository">Тип данных и формат</td>
+                                </thead>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt</td>
+                                  <td class="table_row_repository">Информация о документе, являющемся основанием для взыскания</td>
+                                  <td class="table_row_repository text-center">-</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/Tp</td>
+                                  <td class="table_row_repository">Тип документа</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/Tp/CdOrPrtry</td>
+                                  <td class="table_row_repository">Код или в собственном формате</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/Tp/CdOrPrtry/Prtry</td>
+                                  <td class="table_row_repository">Код в собственном формате</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">[0-9]{2}</br>Согласно справочнику N049</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr</td>
+                                  <td class="table_row_repository">Информация об уполномоченном органе, принявшем документ</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/Nm</td>
+                                  <td class="table_row_repository">Наименование</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.2</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/PstlAdr</td>
+                                  <td class="table_row_repository">Почтовый адрес</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно Б.5</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/Id</td>
+                                  <td class="table_row_repository">Идентификация</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">-</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/Id/OrgId</td>
+                                  <td class="table_row_repository">Идентификация организации</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно Б.2</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/GrnshmtAdmstr/CtctDtls</td>
+                                  <td class="table_row_repository">Контактные данные</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно Б.6</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/RefNb</td>
+                                  <td class="table_row_repository">Номер документа</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Max140Text</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/Dt</td>
+                                  <td class="table_row_repository">Дата документа</td>
+                                  <td class="table_row_repository text-center">О</td>
+                                  <td class="table_row_repository">Согласно А.7</td>
+                                </tr>
+                                <tr class="table_row_repository">
+                                  <td class="table_row_repository">GrnshmtRmt/RmtdAmt</td>
+                                  <td class="table_row_repository">Сумма, указанная в документе</td>
+                                  <td class="table_row_repository text-center">Н</td>
+                                  <td class="table_row_repository">Согласно А.5</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                           </br>
                           </br>
                         </div>

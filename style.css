@@ -1439,6 +1439,7 @@ a.button_main1{
   background:#ebebeb;
 }
 .p_inf_repository{
+  text-align: justify;
   text-indent: 25px;
 }
 .table_repository{
@@ -1469,6 +1470,10 @@ a.button_main1{
     margin: 0;
   }
   .mes_dir_auto .h1_developing{
+    font-size: 36px;
+    line-height: 41px;
+  }
+  .h1_repositiry{
     font-size: 36px;
     line-height: 41px;
   }
