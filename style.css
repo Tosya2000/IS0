@@ -1384,12 +1384,12 @@ a.button_main1{
   background: url('image/our_3.png') 100% 100% no-repeat;
 }
 .col_our{
+  height: 248px;
   background: rgba(255, 255, 255, 0.3);
-  padding: 68px 22px;
+  padding: 0 22px;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-}
-.col_our_odd{
-  padding: 82px 22px;
 }
 @media (max-width: 1440px) {
   .col_our_service{
@@ -1444,12 +1444,12 @@ a.button_main1{
 }
 .table_repository{
   font:20px Times New Roman;
+  border: 1px solid black;
   color: black;
   width: 100%;
   border-collapse:collapse;
-  border-spacing:0;
+  border-spacing: 0px;
   height: auto;
-  border: 1px solid #black;
 }
 .table_repository_header{
   font-weight:bold;
