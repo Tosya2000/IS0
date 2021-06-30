@@ -1492,3 +1492,8 @@ a.button_main_mes{
   padding: 9px 22px 10px 26px;
   display: inline-block;
 }
+mark{
+  background-color: yellow;
+  color: black;
+  padding: 0;
+}
