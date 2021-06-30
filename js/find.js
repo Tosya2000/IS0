@@ -1,6 +1,6 @@
 document.querySelector('#id13003, #id20000 , #id30000').oninput=function(){
 	let val = this.value.trim();
-	let elasticItems = document.querySelectorAll('.accordion-header p');
+	let elasticItems = document.querySelectorAll('.accordion-header p, .sec3_mes_1_dop p');
 	if ( val!= ''){
 		elasticItems.forEach(function(elem){
 			if(elem.innerText.search(val)==-1){
