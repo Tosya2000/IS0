@@ -1,16 +1,16 @@
-document.querySelector('#id13003, #id20000 , #id30000').oninput=function(){
+document.querySelector('#id13003, #id20000 , #id30000, #id40000, #id50000').oninput=function(){
 	let val = this.value.trim();
-	let elasticItems = document.querySelectorAll('.accordion-header p, .sec3_mes_1_dop p');
+	let elasticItems = document.querySelectorAll('.accordion-header p, .sec3_mes_1_dop p, .table-responsive td');
 	if ( val!= ''){
 		elasticItems.forEach(function(elem){
-			if(elem.innerText.search(val)==-1){
+			if(elem.innerText.search(new RegExp(val, "i"))==-1){
 				elem.classList.add('hide');
 				elem.innerHTML=elem.innerText;
 			}
 			else{
 				elem.classList.remove('hide');
 				let str=elem.innerText;
-				elem.innerHTML=insertMark(str,elem.innerText.search(val),val.length);
+				elem.innerHTML=insertMark(str,elem.innerText.search(new RegExp(val, "i")),val.length);
 			}
 		});
 	}
