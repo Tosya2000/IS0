@@ -1,0 +1,13 @@
+<!--Адрес-->
+<PstlAdr>
+  <!--НазваниеУлицы-->
+  <StrtNm>SCHIPHOL BOULEVARD</StrtNm>
+  <!--НомерДома-->
+  <BldgNb>165</BldgNb>
+  <!--ПочтовыйИндекс-->
+  <PstCd>1118BG</PstCd>
+  <!--НазваниеНаселенногоПункта-->
+  <TwnNm>SCHIPHOL</TwnNm>
+  <!--Страна-->
+  <Ctry>NL</Ctry>
+</PstlAdr>

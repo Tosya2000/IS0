@@ -1459,6 +1459,10 @@ a.button_main1{
 .table_row_repository{
   border: 1px solid black;
 }
+iframe{
+  height: 200px;
+  width: auto;
+}
 /*END Репозиторий*/
 
 .but_xsd_left{
@@ -1496,4 +1500,23 @@ mark{
   background-color: yellow;
   color: black;
   padding: 0;
+}
+a.button_download{
+  color: #FFFFFF;
+  text-decoration: none;
+  user-select: none;
+  background: #3794D1;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  height: 35px;
+  min-width: 75px;
+  text-align: center;
+  padding: 8px 8px 7px 5px;
+  display: inline-block;
+}
+a.button_download img{
+  margin-left: 8.44px;
 }
