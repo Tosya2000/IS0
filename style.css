@@ -1493,6 +1493,8 @@ a.button_main_mes{
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  width: 138px;
+  height: 40px;
   padding: 9px 22px 10px 26px;
   display: inline-block;
 }
@@ -1515,8 +1517,9 @@ a.button_download{
   min-width: 75px;
   text-align: center;
   padding: 8px 8px 7px 5px;
-  display: inline-block;
+  display: table-cell;
 }
 a.button_download img{
+  vertical-align: baseline;
   margin-left: 8.44px;
 }
