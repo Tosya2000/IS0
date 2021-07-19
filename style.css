@@ -1523,3 +1523,27 @@ a.button_download img{
   vertical-align: baseline;
   margin-left: 8.44px;
 }
+/*Общая информация*/
+.section3_general{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
+  padding: 50px 0;
+}
+.section3_block{
+  margin: 0;
+  margin-bottom: 30px;
+}
+.ul_general{
+  padding-left: 40px;
+  margin-bottom: 5px;
+}
+.ul_general li{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+@media (max-width:767px) {
+  .img_general{
+    width: 100%;
+  }
+}
