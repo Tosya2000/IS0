@@ -2,7 +2,7 @@ body, html
 {
   width: 100%;
   height: 100%;
-  background-color: #E5E5E5;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #666666;
   font-size: 14px;
   --bs-font-sans-serif:Arial;
@@ -45,6 +45,7 @@ hr{
 }
 .a_header_white{
   color: #FFFFFF;
+  font-size: 18px;
 }
 
 /*Header id1 start*/
@@ -597,16 +598,16 @@ a.button_main{
 .footer_a{
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
   text-decoration: none;
 }
 .footer_item{
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .footer_bot1{
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 }
 .footer_bot2{
   margin-bottom: 19px;
@@ -701,9 +702,9 @@ a.button_main{
 .h1_developing{
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 55px;
-  color: #666666;
+  color: #777777;
   margin-bottom: 9px;
 }
 .h2_developing,.h2_developing_1,.a_developing_1{
@@ -749,7 +750,7 @@ a.button_main{
 .contact_1{
   background: #FFFFFF;
   backdrop-filter: blur(4px);
-  padding: 58px 0 60px 0;
+  padding: 30px 0 35px 0;
 }
 .contact_2, .contact_2_about{
   height: 403px;
@@ -758,7 +759,7 @@ a.button_main{
 }
 .contact_3{
   min-height: 603px;
-  padding: 31px 0 58px 0;
+  padding: 28px 0 50px 0;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
   backdrop-filter: blur(4px);
 }
@@ -776,7 +777,7 @@ a.button_main{
 .main_nav_a{
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 23px;
   color: #3794D1;
 }
@@ -801,7 +802,7 @@ a.button_main{
 .h2_inf{
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 41px;
   color: #3794D1;
   margin-bottom: 16px;
@@ -809,8 +810,8 @@ a.button_main{
 .p_inf_add{
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 24px;
   color: #666666;
 }
 .p_inf{
@@ -1139,13 +1140,13 @@ a.button_main1{
 /*БЛОК полный каталог START*/
 /*Блок поиска начало*/
 .find_block{
-  padding: 65px 0;
+  padding: 20px 0;
   background: #666666;
   backdrop-filter: blur(4px);
 }
 .h2_find_block{
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 40px;
   color: #FFFFFF;
   margin: 0;
@@ -1182,12 +1183,12 @@ a.button_main1{
 }
 /*Блок поиска конец*/
 .sec3_mes{
-  padding: 58px 0;
+  padding: 35px 0;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
   backdrop-filter: blur(4px);
 }
 .sec3_mes_1, .sec3_mes_2{
-  padding: 25px 80px;
+  padding: 15px 80px;
   background: rgba(55, 148, 209, 0.3);
 }
 .sec3_mes_2{
@@ -1361,7 +1362,7 @@ a.button_main1{
 }
 .section4_our{
   background: #3794D1;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 .col_our_service{
   width: 300px;
@@ -1391,6 +1392,9 @@ a.button_main1{
   vertical-align: middle;
   text-align: center;
 }
+/*.col_our_odd{
+  padding: 82px 22px;
+}*/
 @media (max-width: 1440px) {
   .col_our_service{
     margin-right: auto;
@@ -1519,9 +1523,29 @@ a.button_download{
   padding: 8px 8px 7px 5px;
   display: table-cell;
 }
+a.button_download_xsd{
+  color: #FFFFFF;
+  text-decoration: none;
+  user-select: none;
+  background: #3794D1;
+  outline: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  height: 38px;
+  width: 70px;
+  text-align: center;
+  padding: 8px 9px 9px 5px;
+  display: table-cell;
+}
 a.button_download img{
   vertical-align: baseline;
   margin-left: 8.44px;
+}
+a.button_download_xsd img{
+  vertical-align: baseline;
+  margin-left: 6px;
 }
 /*Общая информация*/
 .section3_general{
@@ -1546,4 +1570,7 @@ a.button_download img{
   .img_general{
     width: 100%;
   }
+}
+.p_inf_gen{
+  text-align: justify;
 }
