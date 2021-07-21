@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Полезные ссылки</title>
     <link rel="stylesheet" href="bootstrap\dist\css\bootstrap.css">
-    <link rel="stylesheet" href="bootstrap\dist\css\bootstrap-grid.css">
-    <link rel="stylesheet" href="bootstrap\dist\css\bootstrap-utilities.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -37,7 +35,7 @@
                 <a href="mailto:info@iso20022.by" class="a_header header_link" id="id1005">info@iso20022.by</a>
               </li>
               <li class="header_item_id12 dropdown">
-                <a class="a_header nav-link dropdown-toggle p-0" id="id1006" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="a_header nav-link p-0" id="id1006" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Русский (RU-BY)
                 </a>
                 <!--<ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="id1001">
@@ -81,10 +79,13 @@
       <div class="wrapper">
         <ul class="header_list_id2 d-md-flex justify-content-evenly">
           <li class="header_item_id2">
+                <a href="index.html" class="a_header a_header_white" id="id2008">Главная страница</a>
+              </li>
+          <li class="header_item_id2">
                 <a href="our_services.html" class="a_header a_header_white" id="id2001">Наши услуги</a>
               </li>
           <li class="header_item_id2">
-                  <a href="developing.html" class="a_header a_header_white" id="id2002">Каталог сообщений</a>
+                <a href="general_inf.html" class="a_header a_header_white" id="id2002">Каталог сообщений</a>
               </li>
           <li class="header_item_id2">
                 <a href="repository.html" class="a_header a_header_white" id="id2003">Репозиторий</a>
@@ -100,11 +101,11 @@
                   <img src="image\find.png">
                 </a>
               </li>-->
-          <li class="header_item_id2">
+          <!--<li class="header_item_id2">
                   <a  class="a_header a_header_white"id="id2007">
                     <img src="image\come_in.png">
                   </a>
-              </li>
+              </li>-->
             </ul>
       </div>
     </header>
@@ -121,12 +122,12 @@
                   <hr class="d-sm-none hr_main_nav">
                 </div>
                 <div class="col-12 col-sm-auto p-0 d-sm-flex align-items-end">
-                  <a target="_blank" class="main_nav_a">НОРМАТИВНЫЕ ДОКУМЕНТЫ</a>
+                  <a href="#links_regulations" class="main_nav_a">НОРМАТИВНЫЕ ДОКУМЕНТЫ</a>
                   <div class="main_nav_vl d-none d-sm-block"></div>
                   <hr class="d-sm-none hr_main_nav">
                 </div>
                 <div class="col-12 col-sm-auto p-0 d-sm-flex align-items-end">
-                  <a target="_blank" class="main_nav_a">УТВЕРЖДЕННЫЕ ФОРМАТЫ</a>
+                  <a href="#links_formats" class="main_nav_a">УТВЕРЖДЕННЫЕ ФОРМАТЫ</a>
                 </div>
               </div>
             </div>
@@ -154,7 +155,7 @@
           </div>
         </div>
         <hr class="hr_link">
-        <section class="sec3_2">
+        <section class="sec3_2" id="links_regulations">
           <div class="wrapper">
             <div class="row m-0">
               <div class="col-12 col-md-6 col6_l">
@@ -180,15 +181,17 @@
             </div>
           </div>
         </section>
-        <section class="sec3_3">
+        <section class="sec3_3" id="links_formats">
           <div class="wrapper">
             <div class="row m-0">
               <div class="col-12 col-md-6 col6_l">
                 <hr class="hr_link">
                 <h3 class="h3_inf h3_inf_link">УТВЕРЖДЕННЫЕ ФОРМАТЫ НАЦИОНАЛЬНЫХ СООБЩЕНИЙ</h3>
                 <p class="p_inf"><a href="https://www.nbrb.by/payment/iso20022/struktura-i-formaty-iso-20022-17072020.doc" class="p_a_inf" target="_blank"><span class="p_inf_blue">Общее описание</span></a> (обновлен 22.07.2020).</p>
-                <p class="p_inf"><a href="http://www.nbrb.by/payment/iso20022/tablicy-ekvivalentnosti-iso-20022.pdf" target="_blank" class="p_a_inf">Таблицы эквивалентности национальных сообщений, созданных по методологии ISO 20022, и электронных документов (сообщений), используемых в платежной системе Республики Беларусь и иных автоматизированных системах</a> (обновлен 17.07.2020).</p>
-                <p class="p_inf"><span class="p_inf_blue">Бизнес-заголовок на уровне Банк-Банк head.001.001.01</span> (обновлен 21.05.2020).</p>
+                <p class="p_inf"><a href="https://www.nbrb.by/payment/iso20022/tab-equval-biss.pdf" target="_blank" class="p_a_inf">Таблицы эквивалентности национальных сообщений, созданных по методологии ISO 20022, и электронных документов (сообщений), используемых в BISS, СМП,  ТОМК и АС ОДН</a> (обновлен 04.03.2021).</p>
+                <p class="p_inf"><a href="https://www.nbrb.by/payment/iso20022/tab-equval-sdbo.pdf" target="_blank" class="p_a_inf">Таблицы эквивалентности национальных сообщений, созданных по методологии ISO 20022, и электронных документов (сообщений), используемых в СДБО</a> (обновлен 04.03.2021).</p>
+                <p class="p_inf"><a href="https://www.nbrb.by/payment/iso20022/tab-equval-ais-ido.pdf" target="_blank" class="p_a_inf">Таблицы эквивалентности национальных сообщений, созданных по методологии ISO 20022, и электронных документов (сообщений), используемых в АИС ИДО</a> (обновлен 04.03.2021).
+                <p class="p_inf"><a href="https://www.nbrb.by/payment/iso20022/biznes-zagolovok-na-urovne-bank-bank-head-001-001-01.xlsx" target="_blank" class="p_a_inf">Бизнес-заголовок на уровне Банк-Банк head.001.001.01</a> (обновлен 21.05.2020).</p>
                 <p class="p_inf"><a href="http://www.nbrb.by/payment/iso20022/biss-20" class="p_a_inf" target="_blank">BISS 2.0.</a></p>
                 <p class="p_inf"><a href="http://www.nbrb.by/payment/iso20022/ais-ido-30" class="p_a_inf" target="_blank">АИС ИДО 3.0.</a></p>
                 <p class="p_inf"><a href="http://www.nbrb.by/payment/iso20022/as-odn" class="p_a_inf" target="_blank">АС ОДН.</a></p>
@@ -217,7 +220,8 @@
                 <p class="p_inf"><a href="http://www.nbrb.by/payment/iso20022/iso-20022-for-dummies.pdf" target="_blank" class="p_a_inf">ISO 20022 for dummies</a> (для чайников).</p>
                 <p class="p_inf p_inf_blue"><a href="https://www.nbrb.by/payment/iso20022/prezentacii-po-iso-20022.ppsx" class="p_a_inf" target="_blank">Презентации по ISO 20022.</a></p>
                 <p class="p_inf"><a href="http://www.nbrb.by/payment/iso20022/plan-iso-20022.pdf" target="_blank" class="p_a_inf">План по комплексному внедрению методологии стандарта ISO 20022</a> в платежную систему Республики Беларусь и иные автоматизированные системы на 2021-2022 годы.</p>
-                <p class="p_inf mar_bot p_links_bot"><a href="http://www.nbrb.by/payment/iso20022/trebovaniya-k-abs-bankov.pdf" target="_blank" class="p_a_inf">Требования к АБС банков, АБС УОР НБ, АС государственных органов и иных организаций</a> взаимодействующих с АС МБР и АС ЦВНСИ НБ, в рамках внедрения методологии стандарта ISO 20022 в платежную систему Республики Беларусь.</p>
+                <p class="p_inf"><a href="http://www.nbrb.by/payment/iso20022/trebovaniya-k-abs-bankov.pdf" target="_blank" class="p_a_inf">Требования к АБС банков, АБС УОР НБ, АС государственных органов и иных организаций</a> взаимодействующих с АС МБР и АС ЦВНСИ НБ, в рамках внедрения методологии стандарта ISO 20022 в платежную систему Республики Беларусь.</p>
+                <p class="p_inf mar_bot p_links_bot"><a href="https://www.nbrb.by/payment/iso20022/trebovaniya-k-abs-bankov_izm1.pdf" target="_blank" class="p_a_inf">Изменение № 1 Требований к АБС банков, АБС УОР НБ, АС государственных органов и иных организаций</a> взаимодействующих с АС МБР и АС ЦВНСИ НБ, в рамках внедрения методологии стандарта ISO 20022 в платежную систему Республики Беларусь.</p>
               </div>
               <div class="col-12 col-md-6 col6_r">
                 <hr class="hr_link">
@@ -235,7 +239,7 @@
           <div class="col-6 col-sm-4 p-0" id="id10100">
             <ul class="list-unstyled">
               <li class="footer_item footer_bot1"><a href="our_services.html" class="footer_a" id="id10101">Наши услуги</a></li>
-              <li class="footer_item"><a href="developing.html" class="footer_a" id="id10102">Каталог сообщений</a></li>
+              <li class="footer_item"><a href="general_inf.html" class="footer_a" id="id10102">Каталог сообщений</a></li>
               <li class="footer_item"><a href="repository.html" class="footer_a" id="id10103">Репозиторий</a></li>
               <li class="footer_item"><a href="news.html" class="footer_a" id="id10104">Новости</a></li>
               <li class="footer_item"><a href="about_iso20022.html" class="footer_a" id="id10105">Об ISO 20022</a></li>
@@ -247,8 +251,8 @@
               <li class="footer_item footer_bot1"><a href="message_directory_c.html" class="footer_a" id="id10201">Полный каталог сообщений</a></li>
               <li class="footer_item"><a href="message_directory_b.html" class="footer_a" id="id10202">Каталоги сообщений по бизнес-областям</a></li>
               <li class="footer_item"><a href="message_directory.html" class="footer_a mar_bot" id="id10206">Каталоги сообщений по автоматизи<span class="d-sm-none">-<br></span>рованным системам</a></li>
-              <li class="footer_item"><a href="developing.html" class="footer_a" id="id10203">Общая информация</a></li>
-              <li class="footer_item"><a class="footer_a" id="id10204">Архив сообщений</a></li>
+              <li class="footer_item"><a href="general_inf.html" class="footer_a" id="id10203">Общая информация</a></li>
+              <!--<li class="footer_item"><a class="footer_a" id="id10204">Архив сообщений</a></li>-->
               <li class="footer_item"><a href="http://10.3.29.161:8081/#/" id="id10205" class="footer_a" target="_blank">API iso20022.by</a></li>
             </ul>
           </div>
