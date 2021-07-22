@@ -1524,6 +1524,9 @@ a.button_download{
   padding: 8px 8px 7px 5px;
   display: table-cell;
 }
+a.button_download_none{
+  background: #666666;
+}
 a.button_download_xsd{
   color: #FFFFFF;
   text-decoration: none;
